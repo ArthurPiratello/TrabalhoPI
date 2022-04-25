@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+header{
+    background-color:#0033cc;
+    padding: 30px;
+    
+}
+button{
+    color:white;
+    font-size: 20px;
+    font-family:"Verdana";
+    border: none;
+    background-color:transparent;
+    text-decoration: none;
+}
+
+.button span {
+    position: relative;
+    transition: 0.5s;
+}
+
+button span:after {
+        content: "\00bb";
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+      }
+ 
+      .button:hover span {
+        padding-right: 25px;
+      }
+ 
+      .button:hover span:after {
+        opacity: 1;
+        right: 0;
+      }
+
+      button:hover {
+            background-color:black;
+            color:white;
+      }
+body{
+    background-color: white;
+}
+
+.p1{
+    color:chartreuse;
+    font-size:50px;
+    font-family:Verdana;
+}
+
+.p2{
+    background-color: blueviolet;
+    color: white;
+    font-size:20px;
+    padding: 20px;
+    font-family:Verdana;
+}
+
+.button1{
+    color:white;
+    font-size: 20px;
+    font-family:"Verdana";
+    background-color:blueviolet;
+    border: none;
+    text-align: center;
+
+}
+
+.button1 span {
+    position: relative;
+    transition: 0.5s;
+}
+
+.button1 span:after {
+        content: "\00bb";
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+      }
+ 
+      .button1:hover span {
+        padding-right: 25px;
+      }
+ 
+      .button1:hover span:after {
+        opacity: 1;
+        right: 0;
+      }
+
+      .button1:hover {
+            background-color:black;
+            color:white;
+      }
+*{
+    margin: 0;
+}
+
+footer{
+    padding: 10px;
+    clear: both;
+    background-color:#0033cc;
+    bottom: 0;
+    width: 2000px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    text-align: center;
+   margin-top: -100px;
+    
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.cont{
+        background-image: url("images/sp.webp");
+        transition: all 0.5s;
+        width: 400px;
+        height: 200px;
+        text-align: justify;
+        float: right;
+        margin: 40px;
+        padding: 30px;
+        margin: 11px 372px;
+        border: solid 2px;
+        border-color: darkblue;
+        background-position: center; 
+    }
+
+    .cont:hover{
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+
+    .cont2{
+        background-image: url("images/alrihla.webp");
+        transition: all 0.5s;
+        width: 400px;
+        height: 200px;
+        text-align: justify;
+        float: right;
+        margin: 40px;
+        padding: 30px;
+        margin: 21px 372px;
+        margin-top: 4px;
+        border: solid 2px;
+        border-color: darkblue;
+        background-position: center;
+    }
+
+    .cont2:hover{
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+
+    .cont img{
+        width: 70px;
+        height: 30px;
+    }
+
+    .cont2 img{
+        width: 70px;
+        height: 30px;
+    }
+
+    img{
+        width: 70px;
+        margin-left: 10px;
+    }
+
+    h4{
+        font-size: 40px;
+        font-family:Arial, Helvetica, sans-serif;
+        color: black;
+        margin-top: -20px;
+
+    }
+
+    .brasileirao{
+        font-size: 20px;
+        font-family:Arial, Helvetica, sans-serif;
+        color: black;
+        margin-top: 10px;
+    }
+
+    .copa{
+        font-size: 20px;
+        font-family:Arial, Helvetica, sans-serif;
+        color: white;
+        margin-top: 10px;
+    }
+
+    .grow:hover
+{
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+}
+
+.facebook{
+    width: 30px;
+}
+
+.noticia{
+        background-image: url("images/05062018_Sustentabilidade_Estádio-do-Morumbi-pode-ganhar-usina-solar.jpg");        
+        width: 300px;
+        height: 200px;
+        text-align: justify;
+        float: right;
+        margin: 40px;
+        padding: 30px;
+        margin: 200px 1250px;
+        margin-top: 75px;
+        background-position: center;
+}
+
+.noticia2{
+        background-image: url("images/Sem-titulo-155-450x300.webp");        
+        width: 300px;
+        height: 200px;
+        text-align: justify;
+        float: right;
+        margin: 40px;
+        padding: 30px;
+        margin: 200px 1250px;
+        margin-top: -600px;
+        background-position: center;
+            
+}
+
+.escrita{        
+        width: 500px;
+        height: 200px;
+        text-align: justify;
+        float: right;
+        margin: 40px;
+        padding: 30px;
+        margin: 700px 700px;
+        margin-top:-465px;       
+        background-position: center;
+}
+
+.escrita2{        
+        width: 500px;
+        height: 200px;
+        text-align: justify;
+        float: right;
+        margin: 40px;
+        padding: 30px;
+        margin: 700px 700px;
+        margin-top:-605px;       
+        background-position: center;
+}
+
+.lib{
+        font-size: 15px;
+        font-family: Arial;
+}
+
+.mor{
+        font-size: 30px;
+        font-family: Arial;
+        color: rgb(85, 85, 243);
+}
+
+.mor:hover{
+        color: darkblue;
+}
+
+.lib2:hover{
+    color: darkblue;
+}
+
+.lib3{
+        font-size: 12px;
+        font-family: Arial;
+}
+
+.tabela{        
+        width: 200px;
+        height: 450px;
+        text-align: justify;
+        float: right;
+        margin: 40px;
+        padding: 30px;
+        margin: -1310px 373px;
+        border: solid 2px;
+        border-color: darkblue;      
+        background-position: center;
+}
+
+.rodada{
+    font-size: 15px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.flu1{
+    width: 30px;
+    margin: -15px 20px;
+}
+
+.san1{
+    width: 30px;
+    margin: -15px 20px;
+    margin-top: -2px;
+}
+
+.fla1{
+    width: 30px;
+    margin: -15px 20px;
+    margin-top: -2px;
+}
+
+.cam1{
+    width: 35px;
+    margin: -15px 20px;
+    margin-top: -2px;
+}
+
+.pal1{
+    width: 30px;
+    margin: -15px 20px;
+    margin-top: -2px;
+}
+
+.pontos{
+    margin: -20px 177px;
+    font-size: 15px;
+    font-family:Arial, Helvetica, sans-serif;    
+}
+
+.pontuação{
+    margin: 15px 168px;
+    margin-top: -25px;
+}
+
+.pontuação1{
+    margin: -1px 168px;
+    margin-top: -25px; 
+}
+
+.pontuação2{
+    margin: -1px 168px;
+    margin-top: -25px; 
+}
+
+.time{
+    margin: -17px 70px;
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.br1{
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgb(14, 230, 14);
+}
+
+.cl1{
+    font-size: 15px;
+    font-family:Arial, Helvetica, sans-serif;   
+}
+
+.numeros{
+    font-size: 18px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.br1:hover
+{
+    color: green;
+}
+
+    </style>
+    <link rel="stylesheet" href="fotos3.css">
+</head>
+<body>
+    <header class="cabeçalho">
+
+        <p class="p1"><b>DriblaÊ</b><img src="images/ball3.png" alt=""></p>
+      
+     </header>
+
+     <p class="p2">
+        <button class="button"><a href="Outros.html"><span><b>Home</b></span></a></button>
+        <button class="button"><a href="Sobre.html"><span><b>Sobre</b></span></a></button>
+        <button class="button"><a href="Contatos.html"><span><b>Contatos</b></a></span></button>
+   </p>
+
+   <div class="slider">
+    <ul class="frames">
+        <li id="one" class="slide">
+            <button><a href="Brasileirão.html"><img src="images/brasileirao.jpg" alt="Slide 1"></a></button>
+            <nav>
+                <a class="prev" href="#four">&larr;</a>
+                <a class="next" href="#two">&rarr;</a>
+            </nav>
+            <div class="description">Brasileirão 2022</div>
+        </li>
+        <li id="two" class="slide">
+            <button><a href="Libertadores.html"><img src="images/libertadores.png" alt="Slide 2"></a></button>
+            <nav>
+                <a class="prev" href="#one">&larr;</a>
+                <a class="next" href="#three">&rarr;</a>
+            </nav>
+            <div class="description">Libertadores</div>
+        </li>
+        <li id="three" class="slide">
+            <button><a href="Champions.html"><img src="images/champions.webp" alt="Slide 3"></a></button>
+            <nav>
+                <a class="prev" href="#two">&larr;</a>
+                <a class="next" href="#four">&rarr;</a>
+            </nav>
+            <div class="description">Champions League</div>
+        </li>           
+        <li id="four" class="slide">
+            <button><a href="Copa.html"><img src="images/copa 2022.webp" alt="Slide 4"></a></button>
+            <nav>
+                <a class="prev" href="#three">&larr;</a>
+                <a class="next" href="#one">&rarr;</a>
+            </nav>
+            <div class="description">Copa do Mundo 2022</div>
+        </li>                     
+        <li class="quicknav">
+            <ul>
+                <li><a href="#one"></a></li>
+                <li><a href="#two"></a></li> 
+                <li><a href="#three"></a></li>    
+                <li><a href="#four"></a></li>                       
+            </ul>
+        </li>
+    </ul>
+</div>
+     
+<div class="container">
+    <div class="cont">
+        <div class="zoom">
+            <h4>Brasileirão</h4>
+            <p class="brasileirao"><b>São Paulo vai à Curitiba com desfalques<br> para enfrentar o Athlético-PR</b></p>
+        </div>
+    </div>        
+
+        
+    <div class="cont2">
+        <div class="zoom">
+            <h4>Copa do Mundo</h4>
+            <p class="copa"><b>Conheça a Al Rihla, a bola que será utilizada no Mundial do Catar</b></p>
+        </div>
+    </div>  
+</div>
+
+<br>
+<br>
+
+<div class="noticia">
+    <div class="not">
+        <div class="zoom">
+          
+        </div>
+    </div>        
+</div>
+
+<div class="escrita">
+        <div class="zoom">
+            <h4 class="lib">futebol internacional</h4><br>
+            <p class="lib2"><a href="https://ge.globo.com/futebol/futebol-internacional/noticia/conmebol-atualiza-lista-e-confirma-morumbi-e-
+                beira-rio-na-briga-por-final-da-libertadores-entre-2021-e-2023.ghtml"><b class="mor">Morumbi pode sediar a final da Libertadores de 2023</b></a></p><br>
+            <p class="lib3"><b>Beira-Rio também está na disputa.</b></p>           
+        </div>
+    </div>
+    
+    <div class="noticia2">
+        <div class="not">
+            <div class="zoom">
+              
+            </div>
+        </div>        
+    </div>
+
+    <div class="escrita2">
+        <div class="zoom">
+            <h4 class="lib">eurocopa</h4><br>
+            <p class="lib2"><a href="https://ge.globo.com/futebol/futebol-internacional/noticia/uefa-divulga-logo-da-euro-2024-que-sera-realizada-na-alemanha.ghtml">
+                <b class="mor">UEFA divulga logo da Euro 2024.</b></a></p><br>
+            <p class="lib3"><b>Tormeio será disputado na Alemanha.</b></p>           
+        </div>
+    </div> 
+
+    <div class="tabela">
+        <div class="table">
+            <h2 class="rodada">Rodada X</h4><br>
+            <p class="brasileirao3"><a href="Brasileirão.html"><b class="br1">Brasileirão 2022</b></a></p><br>
+            <p class="class"><b class="cl1">Classificação<h3 class="pontos">P</h3></b></p><br><br>
+            <hr>
+            <br>
+            <p class="flu"><h3 class="numeros">1°<img class="flu1" src="images/Palmeiras.svg" alt=""><h3 class="time">PAL<h2 class="pontuação">30</h2></h2></h3></p>            
+            <hr>
+            <br>
+            <p class="san"><h3 class="numeros">2°<img class="san1" src="images/atletico-mg.svg" alt=""><h3 class="time">CAM<h2 class="pontuação1">27</h2></h2></h3></p>
+            <br>
+            <hr>
+            <br>
+            <p class="fla"><h3 class="numeros">3°<img class="fla1" src="images/Flamengo-2018.svg" alt=""><h3 class="time">FLA<h2 class="pontuação2">25</h2></h2></h3></p>
+            <br>
+            <hr>
+            <br>
+            <p class="cam"><h3 class="numeros">4°<img class="cam1" src="images/Corinthians.svg" alt=""><h3 class="time">COR<h2 class="pontuação2">22</h2></h2></h3></p>
+            <br>
+            <hr>
+            <br>
+            <p class="pal"><h3 class="numeros">5°<img class="pal1" src="images/sao-paulo.svg" alt=""><h3 class="time">SAO<h2 class="pontuação2">18</h2></h2></h3></p>
+            <br>
+            <hr>
+        </div>
+    </div> 
+    
+    
+
+
+     <footer>&copy;Todos os direitos reservados.<br><br>
+        
+            <a href="https://pt-br.facebook.com/">
+                <img class="facebook" src="images/317727_facebook_social media_social_icon.png" width="10px">
+            </a>
+          
+            <a href="https://www.instagram.com/">
+                <img class="facebook" src="images/2609558_instagram_social media_social_icon.png" width="10px"></a>
+            </div>
+
+            <a href="https://twitter.com/">
+                <img class="facebook" src="images/3225183_app_logo_media_popular_social_icon.png" width="10px"></a>
+            </div>
+     </footer>
+
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        header{
+        background-color:#0033cc;
+        padding: 20px;    
+    }
+    
+    .p1{
+        color:chartreuse;
+        font-size:50px;
+        font-family:Verdana;
+    }
+    
+    img{
+            width: 70px;
+            margin-left: 10px;
+    }
+    
+    *{
+        margin: 0px;
+    }
+    
+    .button1{
+        color:white;
+        font-size: 20px;
+        font-family:"Verdana";
+        background-color:#0033cc;
+        border: none;
+        text-align: center;
+    
+    }
+    
+    .button1 span {
+        position: relative;
+        transition: 0.5s;
+    }
+    
+    .button1 span:after {
+            content: "\00bb";
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+          }
+     
+          .button1:hover span {
+            padding-right: 25px;
+          }
+     
+          .button1:hover span:after {
+            opacity: 1;
+            right: 0;
+          }
+    
+          .button1:hover {
+                background-color:black;
+                color:white;
+          }
+    
+          .btn{
+              background-color:white;
+              padding: 10px;
+              width: 100px;
+              font-family: Arial, Helvetica, sans-serif;
+              font-size: 20px;
+              border-radius: 5px;
+              -webkit-transition-duration: 0.4s; /* Safari */
+              transition-duration: 0.4s;
+              color: darkblue;
+              border: solid 2px;
+              border-color: darkblue;
+          }
+    
+          .logo{
+                background-image: url(images/libertad.png);
+                padding: 70px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 200px;
+                
+            
+          }
+          .logo a{
+              background-position-x: 40px;
+          }
+    
+          .logo1{
+              width: 300px;
+              margin-top: -120px;
+              margin-left: 70px;
+              height: 227px;
+          }
+          
+         
+    .btn:hover {
+        background-color: darkblue; /* Green */
+        color: white;
+    }
+    
+    .escrita{        
+            width: 450px;
+            height: 30px;
+            text-align: justify;
+            float: right;
+            margin: 40px;
+            padding: 30px;
+            margin-right: 1040px;
+            margin-top: -250px;   
+            background-position: center;
+    }
+    
+    .lib{
+        font-size: 25px;
+        font-family: Arial;
+        color: white;
+    }
+    
+    footer{
+        padding: 10px;
+        clear: both;
+        background-color:#0033cc;
+        bottom: 0;
+        width: 2000px;
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 20px;
+        text-align: center;
+        margin-top: 500px;    
+    }
+    
+    .facebook{
+        width: 30px;
+    }
+    
+    a{
+        color: white;
+        text-decoration: none;
+    }
+    </style>
+</head>
+<body>
+    <header class="cabeçalho">
+        <p class="p1"><b>DriblaÊ</b><img src="images/ball3.png" alt=""></p>
+        <button class="button1"><a href="Projeto_Integrativo.html"><span><b>Voltar</b></span></a></button>
+     </header>
+
+    <div class="logo">
+
+    </div>
+
+    <div class="copa">
+        <img class="logo1" src="images/libertadores.png" alt="">
+    </div>
+
+    
+
+    <div class="escrita">
+        <div class="zoom">
+            <h4 class="lib">CONMEBOL Libertadores 2022</h4>
+        </div>
+    </div>
+
+    <footer>&copy;Todos os direitos reservados.<br><br>
+        
+        <a href="https://pt-br.facebook.com/">
+            <img class="facebook" src="images/317727_facebook_social media_social_icon.png" width="10px">
+        </a>
+      
+        <a href="https://www.instagram.com/">
+            <img class="facebook" src="images/2609558_instagram_social media_social_icon.png" width="10px"></a>
+        </div>
+
+        <a href="https://twitter.com/">
+            <img class="facebook" src="images/3225183_app_logo_media_popular_social_icon.png" width="10px"></a>
+        </div>
+ </footer>
+</body>
+</html>

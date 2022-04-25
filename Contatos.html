@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="form.js"></script>
+<style>
+
+header{
+    background-color:#0033cc;
+    padding: 30px;
+   
+}
+
+.p1{
+    color:chartreuse;
+    font-size:50px;
+    font-family:Verdana;
+    
+}
+
+img{
+        width: 70px;
+        margin-left: 10px;
+    }
+
+footer{
+    padding: 40px;
+    clear: both;
+    background-color:#0033cc;
+    position: fixed;
+    bottom: 0;
+    width: 2000px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+*{
+    margin: 0;
+}
+
+.container{
+    padding: 100px;
+    height:460px;
+    width: 750px;
+    background-color: #4E75EB;
+    text-align: center;
+    margin-top: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: white; 
+    margin: 18px 500px;
+  
+}
+
+
+
+.button1{
+    color:white;
+    font-size: 20px;
+    font-family:"Verdana";
+    background-color:#0033cc;
+    border: none;
+    text-align: center;
+
+}
+
+.button1 span {
+    position: relative;
+    transition: 0.5s;
+}
+
+.button1 span:after {
+        content: "\00bb";
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+      }
+ 
+      .button1:hover span {
+        padding-right: 25px;
+      }
+ 
+      .button1:hover span:after {
+        opacity: 1;
+        right: 0;
+      }
+
+      .button1:hover {
+            background-color:black;
+            color:white;
+      }
+
+      .btn{
+          background-color:white;
+          padding: 10px;
+          width: 100px;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 20px;
+          border-radius: 5px;
+          -webkit-transition-duration: 0.4s; /* Safari */
+          transition-duration: 0.4s;
+          color: darkblue;
+          border: solid 2px;
+          border-color: darkblue;
+      }
+
+      .p3{
+        color:chartreuse;
+        font-size:70px;
+        font-family:Verdana;
+      }
+
+      
+     
+.btn:hover {
+    background-color: darkblue; /* Green */
+    color: white;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+</style>
+</head>
+<body>
+
+    <header class="cabeçalho">
+        <p class="p1"><b>DriblaÊ</b><img src="images/ball3.png" alt=""></p>
+        <button class="button1"><a href="Projeto_Integrativo.html"><span><b>Voltar</b></span></a></button>
+    </header>
+
+    
+        
+
+    <section class="form">
+        <div class="container">
+            <form method="POST" action="salva_mensagem.php" onsubmit="return validar()"> 
+                <label>Nome: </label><br>
+                <input type="nome" name="nome" size="52" maxlength="150"><br>
+                <label>E-mail: </label><br>
+                <input type="email" name="email" size="52" maxlength="150"><br>
+                <label>Mensagem:</label><br>
+                <textarea name="mensagem" cols="52" rows="10"></textarea><br>
+                <input  class="btn" type="submit" name="Cadastrar"><br>
+                <br>
+                <br>
+                <br>
+                <p class="p3"><b>DriblaÊ</b><img src="images/ball4.png" alt=""></p>
+            </form>
+        </div>
+    </section>
+
+    <footer>&copy;Todos os direitos reservados</footer>
+</body>
+</html>
