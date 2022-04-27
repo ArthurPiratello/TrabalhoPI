@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section class="form">
+        <div class="container">
+            <form method="POST" action="salva_mensagem.php" onsubmit="return validar()"> 
+                <label>Nome completo: </label><br>
+                <input type="nome" name="nome" size="52" maxlength="150"><br>
+                <label>Idade: </label><br>
+                <input type="number" name="idade" size="52" maxlength="150"><br>
+                <label>E-mail: </label><br>
+                <input type="email" name="email" size="52" maxlength="150"><br>
+                <label>CPF: </label><br>
+                <input type="text" name="cpf" \
+			        pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" \
+			        title="Digite um CPF no formato: xxx.xxx.xxx-xx"><br>
+                <label>Jogador preferido:</label><br>
+                <input type="text" name="jogador" size="52" maxlength="150"><br>
+                <label>Escolha o seu time: </label><br>
+                <input type="image" name="time" size="52" maxlength="150"><br>
+                <img class="cap" src="images/Athletico-PR.svg" alt="">
+                <img class="cam" src="images/atletico-mg.svg" alt="">
+                <input  class="btn" type="submit" name="Cadastrar"><br>
+                <br>
+                <br>
+                <br>
+                <p class="p3"><b>DriblaÊ</b><img src="images/ball4.png" alt=""></p>
+            </form>
+        </div>
+    </section>
+
+</body>
+</html>

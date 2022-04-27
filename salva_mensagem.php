@@ -11,4 +11,7 @@ $query= mysqli_query($conexão, $sql)
 
 ?>
 
-<h1>Sucesso ao enviar as informações!</h1>
+<script>
+    window.alert('Sucesso ao enviar as informações!')
+    window.location.href= "Projeto_Integrativo.html";
+</script>

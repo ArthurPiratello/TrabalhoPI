@@ -126,89 +126,90 @@ a{
     text-decoration: none;
 }
 
-.cont{
-        background-image: url("images/sp.webp");
-        transition: all 0.5s;
-        width: 400px;
-        height: 200px;
-        text-align: justify;
-        float: right;
-        margin: 40px;
-        padding: 30px;
-        margin: 11px 372px;
-        border: solid 2px;
-        border-color: darkblue;
-        background-position: center; 
-    }
+.card{
+width: 400px;
+height: 200px;
+background-color: #333;
+border: blue;
+outline-offset: -8px;
+box-shadow: 3px 3px 10px
+rgba(0,0,0, .1);
+position: relative;
+overflow: hidden;
+background-size: cover;
+margin-top: 70px;
+padding: 30px;
+left: 20px;
+margin-left: 1100px;
+margin-top: 100px;
+}
 
-    .cont:hover{
-        -webkit-transform: scale(1.1);
-        transform: scale(1.1);
-    }
+.card-image{
+position: absolute;
+inset: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: transform .75s;
+}
 
-    .cont2{
-        background-image: url("images/alrihla.webp");
-        transition: all 0.5s;
-        width: 400px;
-        height: 200px;
-        text-align: justify;
-        float: right;
-        margin: 40px;
-        padding: 30px;
-        margin: 21px 372px;
-        margin-top: 4px;
-        border: solid 2px;
-        border-color: darkblue;
-        background-position: center;
-    }
+.card:hover .card-image{
+    transform: scale(1.15);
+}
 
-    .cont2:hover{
-        -webkit-transform: scale(1.1);
-        transform: scale(1.1);
-    }
+.card-title{
+position: absolute;
+left: 15px;
+bottom: 15px;
+font-size: 20px;
+font-family: Arial, Helvetica, sans-serif;
+color: black;
+margin: 190px 5px;
+}
 
-    .cont img{
-        width: 70px;
-        height: 30px;
-    }
+.card2{
+width: 400px;
+height: 200px;
+background-color: #333;
+border: blue;
+outline-offset: -8px;
+box-shadow: 3px 3px 10px
+rgba(0,0,0, .1);
+position: relative;
+overflow: hidden;
+background-size: cover;
+margin-top: 70px;
+padding: 30px;
+left: 20px;
+margin-left: 1100px;
+margin-top: 30px;
+}
 
-    .cont2 img{
-        width: 70px;
-        height: 30px;
-    }
+.card-image2{
+position: absolute;
+inset: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: transform .75s;
+}
 
-    img{
-        width: 70px;
-        margin-left: 10px;
-    }
+.card2:hover .card-image2{
+    transform: scale(1.15);
+}
 
-    h4{
-        font-size: 40px;
-        font-family:Arial, Helvetica, sans-serif;
-        color: black;
-        margin-top: -20px;
+.card-title2{
+position: absolute;
+left: 15px;
+bottom: 15px;
+font-size: 20px;
+font-family: Arial, Helvetica, sans-serif;
+color: black;
+margin: 190px 5px;
+}
 
-    }
-
-    .brasileirao{
-        font-size: 20px;
-        font-family:Arial, Helvetica, sans-serif;
-        color: black;
-        margin-top: 10px;
-    }
-
-    .copa{
-        font-size: 20px;
-        font-family:Arial, Helvetica, sans-serif;
-        color: white;
-        margin-top: 10px;
-    }
-
-    .grow:hover
-{
-        -webkit-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-        transform: scale(1.1);
+img{
+    width: 70px;
 }
 
 .facebook{
@@ -385,6 +386,7 @@ a{
     color: green;
 }
 
+
     </style>
     <link rel="stylesheet" href="fotos3.css">
 </head>
@@ -446,23 +448,15 @@ a{
     </ul>
 </div>
      
-<div class="container">
-    <div class="cont">
-        <div class="zoom">
-            <h4>Brasileirão</h4>
-            <p class="brasileirao"><b>São Paulo vai à Curitiba com desfalques<br> para enfrentar o Athlético-PR</b></p>
-        </div>
-    </div>        
-
-        
-    <div class="cont2">
-        <div class="zoom">
-            <h4>Copa do Mundo</h4>
-            <p class="copa"><b>Conheça a Al Rihla, a bola que será utilizada no Mundial do Catar</b></p>
-        </div>
-    </div>  
+<div class="card">         
+    <img src="images/sp.webp" alt="" class="card-image">
+    <h3 class="card-title">São Paulo vai a Curitiba com desfalques para enfrentar o Coritiba.</h3>
 </div>
 
+<div class="card2">         
+    <img src="images/alrihla.webp" alt="" class="card-image2">
+    <h3 class="card-title2">Conheça a Al Rihla, a bola do que será utilizada na Copa do Catar.</h3>
+</div>
 <br>
 <br>
 
