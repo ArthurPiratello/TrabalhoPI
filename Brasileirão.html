@@ -5,23 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
+    <style>
 
-<style>
-    header{
-    background-color:#0033cc;
-    padding: 20px;    
+        h4{
+            margin-top: -25px;
+        }
+
+body{
+    background-image: url("images/fundobrasileirão.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
 }
 
-.p1{
-    color:chartreuse;
-    font-size:50px;
-    font-family:Verdana;
-}
+
+
 
 img{
-        width: 70px;
+        width: 100px;
         margin-left: 10px;
+        margin-bottom: 32px;
+        
 }
 
 *{
@@ -29,12 +34,14 @@ img{
 }
 
 .button1{
-    color:white;
+    color:#aaff00;
     font-size: 20px;
     font-family:"Verdana";
-    background-color:#0033cc;
+    background-color:transparent;
     border: none;
     text-align: center;
+    margin-top: 20px;
+    margin-left: 400px;
 
 }
 
@@ -44,26 +51,26 @@ img{
 }
 
 .button1 span:after {
-        content: "\00bb";
+        content: "<";
         position: absolute;
         opacity: 0;
         top: 0;
-        right: -20px;
+        left: -20px;
         transition: 0.5s;
       }
  
       .button1:hover span {
-        padding-right: 25px;
+        padding-left: 25px;
       }
  
       .button1:hover span:after {
         opacity: 1;
-        right: 0;
+        left: 0;
       }
 
       .button1:hover {
             background-color:black;
-            color:white;
+            color:#aaff00;
       }
 
       .btn{
@@ -79,25 +86,12 @@ img{
           border: solid 2px;
           border-color: darkblue;
       }
-
-      .logo{
-            background-image: url(images/Captura\ de\ tela\ 2022-04-13\ 161320.png);
-            padding: 70px;
-            background-repeat: no-repeat;
-            background-size: cover;
-            height: 200px;
-            
-        
-      }
-      .logo a{
-          background-position-x: 40px;
-      }
+      
 
       .logo1{
-          width: 300px;
-          margin-top: -120px;
-          margin-left: 70px;
-          height: 227px;
+          width: 90px;
+          margin-top: -30px;
+          margin-left: 10px;
       }
       
      
@@ -106,35 +100,18 @@ img{
     color: white;
 }
 
-.escrita{        
-        width: 450px;
-        height: 30px;
-        text-align: justify;
-        float: right;
-        margin: 40px;
-        padding: 30px;
-        margin-right: 1040px;
-        margin-top: -250px;   
-        background-position: center;
-}
-
-.lib{
-    font-size: 25px;
-    font-family: Arial;
-    color: white;
-}
-
 footer{
     padding: 10px;
     clear: both;
     background-color:#0033cc;
     bottom: 0;
-    width: 2000px;
+    width: 1903px;
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
     text-align: center;
-    margin-top: 500px;    
+    margin-top: 970px;    
+    
 }
 
 .facebook{
@@ -145,29 +122,2026 @@ a{
     color: white;
     text-decoration: none;
 }
-</style>
+.carrosel {
+    width: 60%;     
+}
+
+.carousel-item img {
+    border-radius: 25px;
+
+}
+
+.slider .frames .slide .description {
+    background: transparent;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    /*transition*/
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+/* Slider */
+.slider {
+    height: 380px;
+    left: 50%;
+    margin: -100px -400px;
+    position: absolute;
+    top: 30%;
+    width: 1203px;
+    /*box-shadow*/
+    
+}
+.slider .frames {
+    height: 500px;
+    position: relative;
+}
+.slider .frames .slide {
+    height: 500px;
+    list-style: none;
+    position: absolute;
+    width: 1200px;
+}
+.slider .slide:target { z-index: 100 }
+.slider .frames .slide img {
+    height: 500px;
+    width: 1200px;
+}
+.slider .frames .slide nav a {
+    background: hsla(0,0%,0%,.75);
+    color: #fff;
+    font-size: 16px;
+    line-height: 50px;
+    margin-top: -25px;
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    top: 50%;
+    width: 50px;
+    visibility: hidden;
+    z-index: 10;
+}
+.slider:hover .frames .slide nav a {
+    opacity: 1;
+    visibility: visible;
+}
+.slider .frames .slide nav .prev {
+    /*border-radius*/
+    -webkit-border-radius: 0 25px 25px 0;
+    -moz-border-radius: 0 25px 25px 0;
+    border-radius: 0 25px 25px 0;
+    left: 0;
+}
+.slider .frames .slide nav .next {
+    /*border-radius*/
+    -webkit-border-radius: 25px 0 0 25px;
+    -moz-border-radius: 25px 0 0 25px;
+    border-radius: 25px 0 0 25px;
+    right: 0;
+}
+.slider .frames .slide nav a:hover { background: #000 }
+.slider .quicknav {
+    bottom: 0;
+    font-size: 0;
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    z-index: 100;
+}
+.slider:hover .quicknav { opacity: .9 }
+.slider .quicknav li { display: inline-block }
+.slider .quicknav a {
+    background: hsla(0,0%,100%,.9);
+    border: 1px solid hsla(0,0%,0%,.9);
+    /*border-radius*/
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    display: block;
+    height: 10px;
+    margin: 10px 5px;
+    text-decoration: none;
+    width: 10px;
+}
+.slider .quicknav a:hover { background: hsla(0,0%,50%,.9) }
+.slider #one:target ~ .quicknav a[href="#one"], .slider #two:target ~ .quicknav a[href="#two"], .slider #three:target ~ .quicknav a[href="#three"], .slider #four:target ~ .quicknav a[href="#four"], .slider #five:target ~ .quicknav a[href="#five"] {
+    background: hsla(0,0%,0%,.9);
+    border-color: hsla(0,0%,100%,.9);
+    background: rgb(244,246,245);
+    /*linear-gradient*/
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(rgba(244,246,245,1),0.01),color-stop(rgba(203,219,219,1),1),color-stop(rgba(216,216,216,1),1));
+    background: -webkit-linear-gradient(top, rgba(244,246,245,1) 1%, rgba(203,219,219,1) 100%, rgba(216,216,216,1) 100%);
+    background: -moz-linear-gradient(top, rgba(244,246,245,1) 1%, rgba(203,219,219,1) 100%, rgba(216,216,216,1) 100%);
+    background: -o-linear-gradient(top, rgba(244,246,245,1) 1%, rgba(203,219,219,1) 100%, rgba(216,216,216,1) 100%);
+    background: linear-gradient(top, rgba(244,246,245,1) 1%, rgba(203,219,219,1) 100%, rgba(216,216,216,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,rgba(244,246,245,1)), color-stop(100%,rgba(203,219,219,1)), color-stop(100%,rgba(216,216,216,1)));
+    background: -webkit-linear-gradient(top, rgba(244,246,245,1) 1%,rgba(203,219,219,1) 100%,rgba(216,216,216,1) 100%);
+    background: -moz-linear-gradient(top, rgba(244,246,245,1) 1%,rgba(203,219,219,1) 100%,rgba(216,216,216,1) 100%);
+    background: -o-linear-gradient(top, rgba(244,246,245,1) 1%,rgba(203,219,219,1) 100%,rgba(216,216,216,1) 100%);
+    background: linear-gradient(top, rgba(244,246,245,1) 1%,rgba(203,219,219,1) 100%,rgba(216,216,216,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f6f5', endColorstr='#d8d8d8',GradientType=0 );
+    /*box-shadow*/
+    -webkit-box-shadow: inset 0 0 3px #000,0 0 2px rgba(0,0,0,.5),0 2px 3px #666;
+    -moz-box-shadow: inset 0 0 3px #000,0 0 2px rgba(0,0,0,.5),0 2px 3px #666;
+    box-shadow: inset 0 0 3px #000,0 0 2px rgba(0,0,0,.5),0 2px 3px #666;
+}
+.description{
+    text-align: center;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.not{
+    font-size: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 700px;
+    color: #aaff00;
+    margin-left: 60px;
+}
+
+.card{
+width: 300px;
+height: 400px;
+position: relative;
+overflow: hidden;
+background-size: cover;
+margin-top: 70px;
+padding: 30px;
+left: 20px;
+margin-left: 35px;
+margin-top: 70px;
+}
+
+.card-image{
+position: absolute;
+inset: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: transform .75s;
+}
+
+.card:hover .card-image{
+    transform: scale(1.15);
+}
+
+.card-title{
+position: absolute;
+left: 15px;
+bottom: 15px;
+font-size: 30px;
+font-family: Arial, Helvetica, sans-serif;
+color: white;
+}
+
+.noticia2{
+margin-left: 330px;
+margin-top: -470px;
+}
+
+.card-title2{
+position: absolute;
+left: 15px;
+bottom: 15px;
+font-size: 30px;
+font-family: Arial, Helvetica, sans-serif;
+color: white;
+}
+
+.noticia3{
+margin-left: 660px;
+margin-top: -470px;
+}
+
+.noticia4{
+margin-left: 990px;
+margin-top: -470px;
+}
+
+.esp{
+    font-size: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 700px;
+    color: #aaff00;
+    margin-left: 60px;
+    margin-top: 200px;
+}
+
+.card2{
+width: 500px;
+height: 400px;
+position: relative;
+overflow: hidden;
+background-size: cover;
+margin-top: 70px;
+padding: 30px;
+left: 20px;
+margin-left: 35px;
+margin-top: 70px;
+
+}
+
+.card-image2{
+position: absolute;
+inset: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: transform .75s;
+}
+
+.card-title5{
+position: absolute;
+left: 15px;
+bottom: 15px;
+font-size: 30px;
+font-family: Arial, Helvetica, sans-serif;
+color: white;
+text-align: center;
+margin-left: 150px;
+}
+
+.card2:hover .card-image2{
+    transform: scale(1.15);
+}
+
+.card3{
+width: 500px;
+height: 400px;
+position: relative;
+overflow: hidden;
+background-size: cover;
+margin-top: 70px;
+padding: 30px;
+left: 20px;
+margin-left: 570px;
+margin-top: -400px;
+
+}
+
+.card-image3{
+position: absolute;
+inset: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: transform .75s;
+}
+
+.card-title6{
+position: absolute;
+left: 15px;
+bottom: 15px;
+font-size: 30px;
+font-family: Arial, Helvetica, sans-serif;
+color: white;
+text-align: center;
+margin-left: 20px;
+}
+
+.card3:hover .card-image3{
+    transform: scale(1.15);
+}
+
+.card4{
+width: 500px;
+height: 400px;
+position: relative;
+overflow: hidden;
+background-size: cover;
+margin-top: 70px;
+padding: 30px;
+left: 20px;
+margin-left: 1100px;
+margin-top: -400px;
+
+}
+
+.card-image4{
+position: absolute;
+inset: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: transform .75s;
+}
+
+.card-title7{
+position: absolute;
+left: 15px;
+bottom: 15px;
+font-size: 30px;
+font-family: Arial, Helvetica, sans-serif;
+color: white;
+text-align: center;
+margin-left: 70px;
+}
+
+.card4:hover .card-image4{
+    transform: scale(1.15);
+}
+
+.card5{
+width: 300px;
+height: 300px;
+position: relative;
+overflow: hidden;
+background-size: cover;
+margin-top: 70px;
+padding: 30px;
+left: 20px;
+margin-left: 40px;
+margin-top: 80px;
+border-radius: 1000px;
+}
+
+.card-image5{
+position: absolute;
+inset: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: transform .75s;
+}
+
+.card-title8{
+position: absolute;
+left: 15px;
+bottom: 15px;
+font-size: 20px;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color: white;
+text-align: center;
+margin-left: 90px;
+margin-bottom: -2000px;
+margin-top: 3000px;
+}
+
+.card5:hover .card-image5{
+    transform: scale(1.15);
+}
+
+.card6{
+width: 300px;
+height: 300px;
+position: relative;
+overflow: hidden;
+background-size: cover;
+margin-top: 70px;
+padding: 30px;
+left: 20px;
+margin-left: 400px;
+margin-top: -300px;
+border-radius: 1000px;
+}
+
+.card-image6{
+position: absolute;
+inset: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: transform .75s;
+}
+
+.card-title9{
+position: absolute;
+left: 15px;
+bottom: 15px;
+font-size: 20px;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color: white;
+text-align: center;
+margin-left: 430px;
+margin-bottom: -2000px;
+margin-top: 20px;
+}
+
+.card6:hover .card-image6{
+    transform: scale(1.15);
+}
+
+.card7{
+width: 300px;
+height: 300px;
+position: relative;
+overflow: hidden;
+background-size: cover;
+margin-top: 70px;
+padding: 30px;
+left: 20px;
+margin-left: 750px;
+margin-top: -300px;
+border-radius: 1000px;
+}
+
+.card-image7{
+position: absolute;
+inset: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: transform .75s;
+}
+
+.card-title10{
+position: absolute;
+left: 15px;
+bottom: 15px;
+font-size: 20px;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color: white;
+text-align: center;
+margin-left: 870px;
+margin-bottom: -2000px;
+margin-top: 20px;
+}
+
+.card7:hover .card-image7{
+    transform: scale(1.15);
+}
+
+.card8{
+width: 300px;
+height: 300px;
+position: relative;
+overflow: hidden;
+background-size: cover;
+margin-top: 70px;
+padding: 30px;
+left: 20px;
+margin-left: 1100px;
+margin-top: -300px;
+border-radius: 1020px;
+}
+
+.card-image8{
+position: absolute;
+inset: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: transform .75s;
+}
+
+.card-title11{
+position: absolute;
+left: 15px;
+bottom: 15px;
+font-size: 20px;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color: white;
+text-align: center;
+margin-left: 1220px;
+margin-bottom: -2000px;
+margin-top: 20px;
+}
+
+.card8:hover .card-image8{
+    transform: scale(1.15);
+}
+
+.card9{
+width: 400px;
+height: 300px;
+position: relative;
+overflow: hidden;
+background-size: cover;
+margin-top: 70px;
+padding: 30px;
+left: 20px;
+margin-left: 40px;
+margin-top: 80px;
+border-radius: 25px;
+}
+
+.card-image9{
+position: absolute;
+inset: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: transform .75s;
+}
+
+.card-title12{
+position: absolute;
+left: 15px;
+bottom: 15px;
+font-size: 30px;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color: white;
+text-align: center;
+margin-left: 130px;
+margin-bottom: -2660px;
+margin-top: 100px;
+}
+
+.card9:hover .card-image9{
+    transform: scale(1.15);
+}
+
+.card9:hover{
+    border-radius: 30%;
+}
+
+.card10{
+width: 400px;
+height: 300px;
+position: relative;
+overflow: hidden;
+background-size: cover;
+margin-top: 70px;
+padding: 30px;
+left: 20px;
+margin-left: 460px;
+margin-top: -300px;
+border-radius: 25px;
+}
+
+.card-image10{
+position: absolute;
+inset: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: transform .75s;
+}
+
+.card-title13{
+position: absolute;
+left: 15px;
+bottom: 15px;
+font-size: 30px;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color: white;
+text-align: center;
+margin-left: 620px;
+margin-bottom: -2660px;
+margin-top: 100px;
+}
+
+.card10:hover .card-image10{
+    transform: scale(1.15);
+}
+
+.card10:hover{
+    border-radius: 30%;
+}
+
+.card11{
+width: 400px;
+height: 300px;
+position: relative;
+overflow: hidden;
+background-size: cover;
+margin-top: 70px;
+padding: 30px;
+left: 20px;
+margin-left: 880px;
+margin-top: -300px;
+border-radius: 25px;
+}
+
+.card-image11{
+position: absolute;
+inset: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: transform .75s;
+}
+
+.card-title14{
+position: absolute;
+left: 15px;
+bottom: 15px;
+font-size: 30px;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color: white;
+text-align: center;
+margin-left: 1030px;
+margin-bottom: -2660px;
+margin-top: 100px;
+}
+
+.card11:hover .card-image11{
+    transform: scale(1.15);
+}
+
+.card11:hover{
+    border-radius: 30%;
+}
+
+.card12{
+width: 400px;
+height: 300px;
+position: relative;
+overflow: hidden;
+background-size: cover;
+margin-top: 70px;
+padding: 30px;
+left: 20px;
+margin-left: 1300px;
+margin-top: -300px;
+border-radius: 25px;
+}
+
+.card-image12{
+position: absolute;
+inset: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: transform .75s;
+}
+
+.card-title15{
+position: absolute;
+left: 15px;
+bottom: 15px;
+font-size: 30px;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color: white;
+text-align: center;
+margin-left: 1380px;
+margin-bottom: -2660px;
+margin-top: 100px;
+}
+
+.card12:hover .card-image12{
+    transform: scale(1.15);
+}
+
+.card12:hover{
+    border-radius: 30%;
+}
+
+.card13{
+width: 400px;
+height: 300px;
+position: relative;
+overflow: hidden;
+background-size: cover;
+margin-top: 70px;
+padding: 30px;
+left: 20px;
+margin-left: 40px;
+margin-top: 100px;
+border-radius: 25px;
+}
+
+.card-image13{
+position: absolute;
+inset: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: transform .75s;
+}
+
+.card-title16{
+position: absolute;
+left: 15px;
+bottom: 15px;
+font-size: 30px;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color: white;
+text-align: center;
+margin-left: 170px;
+margin-bottom: -3060px;
+margin-top: 100px;
+}
+
+.card13:hover .card-image13{
+    transform: scale(1.15);
+}
+
+.card13:hover{
+    border-radius: 30%;
+}
+
+.card14{
+width: 400px;
+height: 300px;
+position: relative;
+overflow: hidden;
+background-size: cover;
+margin-top: 70px;
+padding: 30px;
+left: 20px;
+margin-left: 460px;
+margin-top: -300px;
+border-radius: 25px;
+}
+
+.card-image14{
+position: absolute;
+inset: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: transform .75s;
+}
+
+.card-title17{
+position: absolute;
+left: 15px;
+bottom: 15px;
+font-size: 30px;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color: white;
+text-align: center;
+margin-left: 540px;
+margin-bottom: -3060px;
+margin-top: 100px;
+}
+
+.card14:hover .card-image14{
+    transform: scale(1.15);
+}
+
+.card14:hover{
+    border-radius: 30%;
+}
+
+.card15{
+width: 400px;
+height: 300px;
+position: relative;
+overflow: hidden;
+background-size: cover;
+margin-top: 70px;
+padding: 30px;
+left: 20px;
+margin-left: 880px;
+margin-top: -300px;
+border-radius: 25px;
+}
+
+.card-image15{
+position: absolute;
+inset: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: transform .75s;
+}
+
+.card-title18{
+position: absolute;
+left: 15px;
+bottom: 15px;
+font-size: 30px;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color: white;
+text-align: center;
+margin-left: 930px;
+margin-bottom: -3060px;
+margin-top: 100px;
+}
+
+.card15:hover .card-image15{
+    transform: scale(1.15);
+}
+
+.card15:hover{
+    border-radius: 30%;
+}
+
+.card16{
+width: 400px;
+height: 300px;
+position: relative;
+overflow: hidden;
+background-size: cover;
+margin-top: 70px;
+padding: 30px;
+left: 20px;
+margin-left: 1300px;
+margin-top: -300px;
+border-radius: 25px;
+}
+
+.card-image16{
+position: absolute;
+inset: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: transform .75s;
+}
+
+.card-title19{
+position: absolute;
+left: 15px;
+bottom: 15px;
+font-size: 30px;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color: white;
+text-align: center;
+margin-left: 1350px;
+margin-bottom: -3060px;
+margin-top: 100px;
+}
+
+.card16:hover .card-image16{
+    transform: scale(1.15);
+}
+
+.card16:hover{
+    border-radius: 30%;
+}
+
+.tabela{        
+        width: 1100px;
+        height: 1430px;
+        text-align: justify;
+        float: right;
+        margin: 40px;
+        padding: 30px;
+        margin: 700px 100px;
+        border: solid 2px;
+        border-color: #aaff00;      
+        background-position: center;
+        background-color: white;
+}
+
+.rodada{
+    font-size: 15px;
+    font-family:Arial, Helvetica, sans-serif;
+    
+}
+
+.flu1{
+    width: 30px;
+    margin: -12px 20px;
+  
+}
+
+.san1{
+    width: 30px;
+    margin: -15px 20px;
+    margin-top: -2px;
+   
+}
+
+.fla1{
+    width: 30px;
+    margin: -15px 20px;
+    margin-top: -2px;
+    
+}
+
+.cam1{
+    width: 35px;
+    margin: -15px 20px;
+    margin-top: -2px;
+    
+}
+
+.pal1{
+    width: 30px;
+    margin: -15px 20px;
+    margin-top: -2px;    
+}
+
+.pal2{
+    width: 30px;
+    margin: -15px 10px;
+    margin-top: -2px;    
+}
+
+
+
+.pontuação{
+    margin: 15px 270px;
+    margin-top: -25px;
+}
+
+.pontuação1{
+    margin: -1px 270px;
+    margin-top: -25px;
+    
+}
+
+.pontuação2{
+    margin: -1px 270px;
+    margin-top: -25px;     
+}
+
+.pontuação3{
+    margin: -1px 270px;
+    margin-top: -25px;     
+}
+
+.pontuação4{
+    margin: -1px 270px;
+    margin-top: -25px;     
+}
+
+.pontuação5{
+    margin: -1px 270px;
+    margin-top: -25px;     
+}
+
+.pontuação6{
+    margin: -1px 270px;
+    margin-top: -25px;     
+}
+
+.pontuação7{
+    margin: -1px 270px;
+    margin-top: -25px;     
+}
+
+.pontuação8{
+    margin: -1px 270px;
+    margin-top: -25px;     
+}
+
+.pontuação9{
+    margin: -1px 270px;
+    margin-top: -25px;     
+}
+
+.pontuação10{
+    margin: -1px 270px;
+    margin-top: -25px;     
+}
+
+.pontuação11{
+    margin: -1px 270px;
+    margin-top: -25px;     
+}
+
+.pontuação12{
+    margin: -1px 270px;
+    margin-top: -25px;     
+}
+
+.pontuação13{
+    margin: -1px 270px;
+    margin-top: -25px;     
+}
+
+.pontuação14{
+    margin: -1px 270px;
+    margin-top: -25px;     
+}
+
+.pontuação15{
+    margin: -1px 270px;
+    margin-top: -25px;     
+}
+
+.pontuação16{
+    margin: -1px 270px;
+    margin-top: -25px;     
+}
+
+.pontuação17{
+    margin: -1px 270px;
+    margin-top: -25px;     
+}
+
+.pontuação18{
+    margin: -1px 270px;
+    margin-top: -25px;     
+}
+
+.pontuação19{
+    margin: -1px 270px;
+    margin-top: -25px;     
+}
+
+.time{
+    margin: -17px 72px;
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+   
+}
+
+.br1{
+    font-size: 30px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgb(14, 230, 14);
+    
+}
+
+.cl1{
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-left: -2px;  
+}
+
+.numeros{
+    font-size: 18px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.jogo1{
+    margin-left: 360px;
+    margin-top: -43px;
+}
+
+.v1{
+    margin-left: 450px;
+    margin-top: -27px;
+}
+
+.e1{
+    margin-left: 540px;
+    margin-top: -27px;
+}
+
+.d1{
+    margin-left: 632px;
+    margin-top: -27px;
+}
+
+.gp1{
+    margin-left: 732px;
+    margin-top: -27px;
+}
+
+.gc1{
+    margin-left: 840px;
+    margin-top: -27px;
+}
+
+.s1{
+    margin-left: 948px;
+    margin-top: -27px;
+}
+
+.jogo2{
+    margin-left: 360px;
+    margin-top: -27px;
+}
+
+.v2{
+    margin-left: 450px;
+    margin-top: -27px;
+}
+
+.e2{
+    margin-left: 540px;
+    margin-top: -27px;
+}
+
+.d2{
+    margin-left: 632px;
+    margin-top: -27px;
+}
+
+.gp2{
+    margin-left: 732px;
+    margin-top: -27px;
+}
+
+.gc2{
+    margin-left: 840px;
+    margin-top: -27px;
+}
+
+.s2{
+    margin-left: 948px;
+    margin-top: -27px;
+}
+
+.jogo3{
+    margin-left: 360px;
+    margin-top: -27px;
+}
+
+.v3{
+    margin-left: 450px;
+    margin-top: -27px;
+}
+
+.e3{
+    margin-left: 540px;
+    margin-top: -27px;
+}
+
+.d3{
+    margin-left: 632px;
+    margin-top: -27px;
+}
+
+.gp3{
+    margin-left: 732px;
+    margin-top: -27px;
+}
+
+.gc3{
+    margin-left: 840px;
+    margin-top: -27px;
+}
+
+.s3{
+    margin-left: 948px;
+    margin-top: -27px;
+}
+
+.jogo4{
+    margin-left: 360px;
+    margin-top: -27px;
+}
+
+.v4{
+    margin-left: 450px;
+    margin-top: -27px;
+}
+
+.e4{
+    margin-left: 540px;
+    margin-top: -27px;
+}
+
+.d4{
+    margin-left: 632px;
+    margin-top: -27px;
+}
+
+.gp4{
+    margin-left: 732px;
+    margin-top: -27px;
+}
+
+.gc4{
+    margin-left: 840px;
+    margin-top: -27px;
+}
+
+.s4{
+    margin-left: 948px;
+    margin-top: -27px;
+}
+
+.jogo5{
+    margin-left: 360px;
+    margin-top: -27px;
+}
+
+.v5{
+    margin-left: 450px;
+    margin-top: -27px;
+}
+
+.e5{
+    margin-left: 540px;
+    margin-top: -27px;
+}
+
+.d5{
+    margin-left: 632px;
+    margin-top: -27px;
+}
+
+.gp5{
+    margin-left: 732px;
+    margin-top: -27px;
+}
+
+.gc5{
+    margin-left: 840px;
+    margin-top: -27px;
+}
+
+.s5{
+    margin-left: 948px;
+    margin-top: -27px;
+}
+
+.jogo6{
+    margin-left: 360px;
+    margin-top: -27px;
+}
+
+.v6{
+    margin-left: 450px;
+    margin-top: -27px;
+}
+
+.e6{
+    margin-left: 540px;
+    margin-top: -27px;
+}
+
+.d6{
+    margin-left: 632px;
+    margin-top: -27px;
+}
+
+.gp6{
+    margin-left: 732px;
+    margin-top: -27px;
+}
+
+.gc6{
+    margin-left: 840px;
+    margin-top: -27px;
+}
+
+.s6{
+    margin-left: 948px;
+    margin-top: -27px;
+}
+
+.jogo7{
+    margin-left: 360px;
+    margin-top: -27px;
+}
+
+.v7{
+    margin-left: 450px;
+    margin-top: -27px;
+}
+
+.e7{
+    margin-left: 540px;
+    margin-top: -27px;
+}
+
+.d7{
+    margin-left: 632px;
+    margin-top: -27px;
+}
+
+.gp7{
+    margin-left: 732px;
+    margin-top: -27px;
+}
+
+.gc7{
+    margin-left: 840px;
+    margin-top: -27px;
+}
+
+.s7{
+    margin-left: 948px;
+    margin-top: -27px;
+}
+
+.jogo8{
+    margin-left: 360px;
+    margin-top: -27px;
+}
+
+.v8{
+    margin-left: 450px;
+    margin-top: -27px;
+}
+
+.e8{
+    margin-left: 540px;
+    margin-top: -27px;
+}
+
+.d8{
+    margin-left: 632px;
+    margin-top: -27px;
+}
+
+.gp8{
+    margin-left: 732px;
+    margin-top: -27px;
+}
+
+.gc8{
+    margin-left: 840px;
+    margin-top: -27px;
+}
+
+.s8{
+    margin-left: 948px;
+    margin-top: -27px;
+}
+
+.jogo9{
+    margin-left: 360px;
+    margin-top: -27px;
+}
+
+.v9{
+    margin-left: 450px;
+    margin-top: -27px;
+}
+
+.e9{
+    margin-left: 540px;
+    margin-top: -27px;
+}
+
+.d9{
+    margin-left: 632px;
+    margin-top: -27px;
+}
+
+.gp9{
+    margin-left: 732px;
+    margin-top: -27px;
+}
+
+.gc9{
+    margin-left: 840px;
+    margin-top: -27px;
+}
+
+.s9{
+    margin-left: 948px;
+    margin-top: -27px;
+}
+
+.jogo10{
+    margin-left: 360px;
+    margin-top: -27px;
+}
+
+.v10{
+    margin-left: 450px;
+    margin-top: -27px;
+}
+
+.e10{
+    margin-left: 540px;
+    margin-top: -27px;
+}
+
+.d10{
+    margin-left: 632px;
+    margin-top: -27px;
+}
+
+.gp10{
+    margin-left: 732px;
+    margin-top: -27px;
+}
+
+.gc10{
+    margin-left: 840px;
+    margin-top: -27px;
+}
+
+.s10{
+    margin-left: 948px;
+    margin-top: -27px;
+}
+
+.jogo11{
+    margin-left: 360px;
+    margin-top: -27px;
+}
+
+.v11{
+    margin-left: 450px;
+    margin-top: -27px;
+}
+
+.e11{
+    margin-left: 540px;
+    margin-top: -27px;
+}
+
+.d11{
+    margin-left: 632px;
+    margin-top: -27px;
+}
+
+.gp11{
+    margin-left: 732px;
+    margin-top: -27px;
+}
+
+.gc11{
+    margin-left: 840px;
+    margin-top: -27px;
+}
+
+.s11{
+    margin-left: 948px;
+    margin-top: -27px;
+}
+
+.jogo12{
+    margin-left: 360px;
+    margin-top: -27px;
+}
+
+.v12{
+    margin-left: 450px;
+    margin-top: -27px;
+}
+
+.e12{
+    margin-left: 540px;
+    margin-top: -27px;
+}
+
+.d12{
+    margin-left: 632px;
+    margin-top: -27px;
+}
+
+.gp12{
+    margin-left: 732px;
+    margin-top: -27px;
+}
+
+.gc12{
+    margin-left: 840px;
+    margin-top: -27px;
+}
+
+.s12{
+    margin-left: 948px;
+    margin-top: -27px;
+}
+
+.jogo13{
+    margin-left: 360px;
+    margin-top: -27px;
+}
+
+.v13{
+    margin-left: 450px;
+    margin-top: -27px;
+}
+
+.e13{
+    margin-left: 540px;
+    margin-top: -27px;
+}
+
+.d13{
+    margin-left: 632px;
+    margin-top: -27px;
+}
+
+.gp13{
+    margin-left: 732px;
+    margin-top: -27px;
+}
+
+.gc13{
+    margin-left: 840px;
+    margin-top: -27px;
+}
+
+.s13{
+    margin-left: 948px;
+    margin-top: -27px;
+}
+
+.jogo14{
+    margin-left: 360px;
+    margin-top: -27px;
+}
+
+.v14{
+    margin-left: 450px;
+    margin-top: -27px;
+}
+
+.e14{
+    margin-left: 540px;
+    margin-top: -27px;
+}
+
+.d14{
+    margin-left: 632px;
+    margin-top: -27px;
+}
+
+.gp14{
+    margin-left: 732px;
+    margin-top: -27px;
+}
+
+.gc14{
+    margin-left: 840px;
+    margin-top: -27px;
+}
+
+.s14{
+    margin-left: 948px;
+    margin-top: -27px;
+}
+
+.jogo15{
+    margin-left: 360px;
+    margin-top: -27px;
+}
+
+.v15{
+    margin-left: 450px;
+    margin-top: -27px;
+}
+
+.e15{
+    margin-left: 540px;
+    margin-top: -27px;
+}
+
+.d15{
+    margin-left: 632px;
+    margin-top: -27px;
+}
+
+.gp15{
+    margin-left: 732px;
+    margin-top: -27px;
+}
+
+.gc15{
+    margin-left: 840px;
+    margin-top: -27px;
+}
+
+.s15{
+    margin-left: 948px;
+    margin-top: -27px;
+}
+
+.jogo16{
+    margin-left: 360px;
+    margin-top: -27px;
+}
+
+.v16{
+    margin-left: 450px;
+    margin-top: -27px;
+}
+
+.e16{
+    margin-left: 540px;
+    margin-top: -27px;
+}
+
+.d16{
+    margin-left: 632px;
+    margin-top: -27px;
+}
+
+.gp16{
+    margin-left: 732px;
+    margin-top: -27px;
+}
+
+.gc16{
+    margin-left: 840px;
+    margin-top: -27px;
+}
+
+.s16{
+    margin-left: 948px;
+    margin-top: -27px;
+}
+
+.jogo17{
+    margin-left: 360px;
+    margin-top: -27px;
+}
+
+.v17{
+    margin-left: 450px;
+    margin-top: -27px;
+}
+
+.e17{
+    margin-left: 540px;
+    margin-top: -27px;
+}
+
+.d17{
+    margin-left: 632px;
+    margin-top: -27px;
+}
+
+.gp17{
+    margin-left: 732px;
+    margin-top: -27px;
+}
+
+.gc17{
+    margin-left: 840px;
+    margin-top: -27px;
+}
+
+.s17{
+    margin-left: 948px;
+    margin-top: -27px;
+}
+
+.jogo18{
+    margin-left: 360px;
+    margin-top: -27px;
+}
+
+.v18{
+    margin-left: 450px;
+    margin-top: -27px;
+}
+
+.e18{
+    margin-left: 540px;
+    margin-top: -27px;
+}
+
+.d18{
+    margin-left: 632px;
+    margin-top: -27px;
+}
+
+.gp18{
+    margin-left: 732px;
+    margin-top: -27px;
+}
+
+.gc18{
+    margin-left: 840px;
+    margin-top: -27px;
+}
+
+.s18{
+    margin-left: 948px;
+    margin-top: -27px;
+}
+
+.jogo19{
+    margin-left: 360px;
+    margin-top: -27px;
+}
+
+.v19{
+    margin-left: 450px;
+    margin-top: -27px;
+}
+
+.e19{
+    margin-left: 540px;
+    margin-top: -27px;
+}
+
+.d19{
+    margin-left: 632px;
+    margin-top: -27px;
+}
+
+.gp19{
+    margin-left: 732px;
+    margin-top: -27px;
+}
+
+.gc19{
+    margin-left: 840px;
+    margin-top: -27px;
+}
+
+.s19{
+    margin-left: 948px;
+    margin-top: -27px;
+}
+
+.jogo20{
+    margin-left: 360px;
+    margin-top: -27px;
+}
+
+.v20{
+    margin-left: 450px;
+    margin-top: -27px;
+}
+
+.e20{
+    margin-left: 540px;
+    margin-top: -27px;
+}
+
+.d20{
+    margin-left: 632px;
+    margin-top: -27px;
+}
+
+.gp20{
+    margin-left: 732px;
+    margin-top: -27px;
+}
+
+.gc20{
+    margin-left: 840px;
+    margin-top: -27px;
+}
+
+.s20{
+    margin-left: 948px;
+    margin-top: -27px;
+}
+
+.not{
+    font-size: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 700px;
+    color: #aaff00;
+    margin-left: 300px;
+}
+    </style>
+    
+
+</head>
 <body>
-    <header class="cabeçalho">
-        <p class="p1"><b>DriblaÊ</b><img src="images/ball3.png" alt=""></p>
-        <button class="button1"><a href="Projeto_Integrativo.html"><span><b>Voltar</b></span></a></button>
-     </header>
+    
 
-    <div class="logo">
-
-    </div>
-
-    <div class="copa">
-        <img class="logo1" src="images/brasileirao.jpg" alt="">
-    </div>
+        <a href="Projeto_Integrativo.html"></a><button class="button1"><span><b>Início</b></span></button></a>
+    
 
     
 
-    <div class="escrita">
-        <div class="zoom">
-            <h4 class="lib">Brasileirão Série A 2022</h4>
-        </div>
+    <div class="copa">
+<img class="logo1" src="images/logo-brasileirao-vertical-branco.svg" alt="">
     </div>
 
+    
+    <div class="slider">
+        <ul class="frames">
+            <li id="one" class="slide">
+                <img src="images/ameava.png" alt="Slide 1">
+                <nav>
+                    <a class="prev" href="#sixteen">&larr;</a>
+                    <a class="next" href="#two">&rarr;</a>
+                </nav>                
+            </li>
+            <li id="two" class="slide">
+                <img src="images/jogo2.png" alt="Slide 2">
+                <nav>
+                    <a class="prev" href="#one">&larr;</a>
+                    <a class="next" href="#three">&rarr;</a>
+                </nav>                
+            </li>
+            <li id="three" class="slide">
+                <img src="images/jogo3.png" alt="Slide 3">
+                <nav>
+                    <a class="prev" href="#two">&larr;</a>
+                    <a class="next" href="#four">&rarr;</a>
+                </nav>                
+            </li>           
+            <li id="four" class="slide">
+                <img src="images/jogo4.png" alt="Slide 4">
+                <nav>
+                    <a class="prev" href="#three">&larr;</a>
+                    <a class="next" href="#five">&rarr;</a>
+                </nav>
+            </li> 
+            <li id="five" class="slide">
+                <img src="images/jogo5.png" alt="Slide 5">
+                <nav>
+                    <a class="prev" href="#four">&larr;</a>
+                    <a class="next" href="#six">&rarr;</a>
+                </nav>
+            </li>     
+            <li id="six" class="slide">
+                <img src="images/jogo6.png" alt="Slide 6">
+                <nav>
+                    <a class="prev" href="#five">&larr;</a>
+                    <a class="next" href="#seven">&rarr;</a>
+                </nav>
+            </li>     
+            <li id="seven" class="slide">
+                <img src="images/jogo7.png" alt="Slide 7">
+                <nav>
+                    <a class="prev" href="#six">&larr;</a>
+                    <a class="next" href="#eigth">&rarr;</a>
+                </nav>
+            </li>     
+            <li id="eigth" class="slide">
+                <img src="images/jogo8.png" alt="Slide 8">
+                <nav>
+                    <a class="prev" href="#seven">&larr;</a>
+                    <a class="next" href="#nine">&rarr;</a>
+                </nav>
+            </li>     
+            <li id="nine" class="slide">
+                <img src="images/jogo9.png" alt="Slide 9">
+                <nav>
+                    <a class="prev" href="#eigth">&larr;</a>
+                    <a class="next" href="#ten">&rarr;</a>
+                </nav>
+            </li>     
+            <li id="ten" class="slide">
+                <img src="images/jogo10.png" alt="Slide 10">
+                <nav>
+                    <a class="prev" href="#nine">&larr;</a>
+                    <a class="next" href="#eleven">&rarr;</a>
+                </nav>
+            </li>     
+            <li id="eleven" class="slide">
+                <img src="images/jogo11.png" alt="Slide 11">
+                <nav>
+                    <a class="prev" href="#ten">&larr;</a>
+                    <a class="next" href="#twelve">&rarr;</a>
+                </nav>
+            </li>     
+            <li id="twelve" class="slide">
+                <img src="images/jogo12.png" alt="Slide 12">
+                <nav>
+                    <a class="prev" href="#eleven">&larr;</a>
+                    <a class="next" href="#thirteen">&rarr;</a>
+                </nav>
+            </li>     
+            <li id="thirteen" class="slide">
+                <img src="images/jogo13.png" alt="Slide 13">
+                <nav>
+                    <a class="prev" href="#twelve">&larr;</a>
+                    <a class="next" href="#fourteen">&rarr;</a>
+                </nav>
+            </li>     
+            <li id="fourteen" class="slide">
+                <img src="images/jogo14.png" alt="Slide 14">
+                <nav>
+                    <a class="prev" href="#thirteen">&larr;</a>
+                    <a class="next" href="#fifteen">&rarr;</a>
+                </nav>
+            </li>     
+            <li id="fifteen" class="slide">
+                <img src="images/jogo15.png" alt="Slide 15">
+                <nav>
+                    <a class="prev" href="#fourteen">&larr;</a>
+                    <a class="next" href="#sixteen">&rarr;</a>
+                </nav>
+            </li>     
+            <li id="sixteen" class="slide">
+                <img src="images/jogo16.png" alt="Slide 16">
+                <nav>
+                    <a class="prev" href="#fifteen">&larr;</a>
+                    <a class="next" href="#one">&rarr;</a>
+                </nav>
+            </li>                         
+            <li class="quicknav">
+                <ul>
+                    <li><a href="#one"></a></li>
+                    <li><a href="#two"></a></li> 
+                    <li><a href="#three"></a></li>    
+                    <li><a href="#four"></a></li>
+                    <li><a href="#five"></a></li>
+                    <li><a href="#six"></a></li>
+                    <li><a href="#seven"></a></li>
+                    <li><a href="#eigth"></a></li>
+                    <li><a href="#nine"></a></li>
+                    <li><a href="#ten"></a></li>
+                    <li><a href="#eleven"></a></li>
+                    <li><a href="#twelve"></a></li>
+                    <li><a href="#thirteen"></a></li>
+                    <li><a href="#fourteen"></a></li>
+                    <li><a href="#fifteen"></a></li>
+                    <li><a href="#sixteen"></a></li>                       
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="noticias">
+        <p class="not"><b>TABELA</b></p>
+    </div>
+    
+
+    <div class="tabela">
+        <div class="table">
+            <h2 class="rodada">Rodada 20</h4><br>
+            <p class="brasileirao3"><a href="Brasileirão.html"><b class="br1">Brasileirão 2022</b></a></p><br>
+            <p class="class"><h3 class="cl1">Classificação_____________ P ______ J ______ V ______ E ______ D ______ GP ______
+                 GC ______ SG __________</p>           
+            <hr>
+            <br>
+            <p class="flu">
+                <h3 class="numeros">1°<img class="flu1" src="images/Palmeiras.svg" alt=""><h3 class="time">PALMEIRAS<h2 class="pontuação">30</h2><h2 class="jogo1">19</h2>
+                <h2 class="v1">10</h2><h2 class="e1">10</h2><h2 class="d1">10</h2><h2 class="gp1">10</h2>
+                <h2 class="gc1">10</h2><h2 class="s1">10</h2></h3><br>
+            </p>
+            <hr>
+            <br>
+            <p class="san"><h3 class="numeros">2°<img class="san1" src="images/atletico-mg.svg" alt=""><h3 class="time">ATLÉTICO-MG<h2 class="pontuação1">27</h2>
+                <h2 class="jogo2">19</h2><h2 class="v2">10</h2><h2 class="e2">10</h2><h2 class="d2">10</h2>
+                <h2 class="gp2">10</h2><h2 class="gc2">10</h2><h2 class="s2">10</h2></h3></h3>
+            </p>
+            <br>
+            <hr>
+            <br>
+            <p class="fla"><h3 class="numeros">3°<img class="fla1" src="images/Flamengo-2018.svg" alt=""><h3 class="time">FLAMENGO<h2 class="pontuação2">25</h2>
+                <h2 class="jogo3">19</h2><h2 class="v3">10</h2><h2 class="e3">10</h2><h2 class="d3">10</h2>
+                <h2 class="gp3">10</h2><h2 class="gc3">10</h2><h2 class="s3">10</h2></h3></h3>
+            </p>
+            <br>
+            <hr>
+            <br>
+            <p class="cam"><h3 class="numeros">4°<img class="cam1" src="images/Corinthians.svg" alt=""><h3 class="time">CORINTHIANS<h2 class="pontuação3">22</h2>
+                <h2 class="jogo4">19</h2><h2 class="v4">10</h2><h2 class="e4">10</h2><h2 class="d4">10</h2>
+                <h2 class="gp4">10</h2><h2 class="gc4">10</h2><h2 class="s4">10</h2></h3></h3></p>
+            <br>
+            <hr>
+            <br>
+            <p class="pal"><h3 class="numeros">5°<img class="pal1" src="images/sao-paulo.svg" alt=""><h3 class="time">SAO PAULO<h2 class="pontuação4">18</h2>
+                <h2 class="jogo5">19</h2><h2 class="v5">10</h2><h2 class="e5">10</h2><h2 class="d5">10</h2>
+                <h2 class="gp5">10</h2><h2 class="gc5">10</h2><h2 class="s5">10</h2></h3></h3></p></h3></p>
+            <br>
+            <hr>
+            <br>
+            <p class="pal"><h3 class="numeros">6°<img class="pal1" src="images/sao-paulo.svg" alt=""><h3 class="time">BRAGANTINO<h2 class="pontuação5">18</h2>
+                <h2 class="jogo6">19</h2><h2 class="v6">10</h2><h2 class="e6">10</h2><h2 class="d6">10</h2>
+                <h2 class="gp6">10</h2><h2 class="gc6">10</h2><h2 class="s6">10</h2></h3></h3></p></h3></p>
+            <br>
+            <hr>
+            <br>
+            <p class="pal"><h3 class="numeros">7°<img class="pal1" src="images/sao-paulo.svg" alt=""><h3 class="time">ATHLETICO-PR<h2 class="pontuação6">18</h2>
+                <h2 class="jogo7">19</h2><h2 class="v7">10</h2><h2 class="e7">10</h2><h2 class="d7">10</h2>
+                <h2 class="gp7">10</h2><h2 class="gc7">10</h2><h2 class="s7">10</h2></h3></h3></p></h3></p> 
+            <br>
+            <hr>
+            <br>
+            <p class="pal"><h3 class="numeros">8°<img class="pal1" src="images/sao-paulo.svg" alt=""><h3 class="time">FLUMINENSE<h2 class="pontuação7">18</h2>
+                <h2 class="jogo8">19</h2><h2 class="v8">10</h2><h2 class="e8">10</h2><h2 class="d8">10</h2>
+                <h2 class="gp8">10</h2><h2 class="gc8">10</h2><h2 class="s8">10</h2></h3></h3></p></h3></p> 
+            <br>
+            <hr>
+            <br>
+            <p class="pal"><h3 class="numeros">9°<img class="pal1" src="images/sao-paulo.svg" alt=""><h3 class="time">INTERNACIONAL<h2 class="pontuação8">18</h2>
+                <h2 class="jogo9">19</h2><h2 class="v9">10</h2><h2 class="e9">10</h2><h2 class="d9">10</h2>
+                <h2 class="gp9">10</h2><h2 class="gc9">10</h2><h2 class="s9">10</h2></h3></h3></p></h3></p> 
+            <br>
+            <hr>
+            <br>
+            <p class="pal"><h3 class="numeros">10°<img class="pal2" src="images/sao-paulo.svg" alt=""><h3 class="time">JUVENTUDE<h2 class="pontuação9">18</h2>
+                <h2 class="jogo10">19</h2><h2 class="v10">10</h2><h2 class="e10">10</h2><h2 class="d10">10</h2>
+                <h2 class="gp10">10</h2><h2 class="gc10">10</h2><h2 class="s10">10</h2></h3></h3></p></h3></p> 
+            <br>
+            <hr>
+            <br>
+            <p class="pal"><h3 class="numeros">11°<img class="pal2" src="images/sao-paulo.svg" alt=""><h3 class="time">FORTALEZA<h2 class="pontuação10">18</h2>
+                <h2 class="jogo11">19</h2><h2 class="v11">10</h2><h2 class="e11">10</h2><h2 class="d11">10</h2>
+                <h2 class="gp11">10</h2><h2 class="gc11">10</h2><h2 class="s11">10</h2></h3></h3></p></h3></p>
+            <br>
+            <hr>
+            <br>
+            <p class="pal"><h3 class="numeros">12°<img class="pal2" src="images/sao-paulo.svg" alt=""><h3 class="time">SAO<h2 class="pontuação11">18</h2>
+                <h2 class="jogo12">19</h2><h2 class="v12">10</h2><h2 class="e12">10</h2><h2 class="d12">10</h2>
+                <h2 class="gp12">10</h2><h2 class="gc12">10</h2><h2 class="s12">10</h2></h3></h3></p></h3></p> 
+            <br>
+            <hr>
+            <br>
+            <p class="pal"><h3 class="numeros">13°<img class="pal2" src="images/sao-paulo.svg" alt=""><h3 class="time">SAO<h2 class="pontuação12">18</h2>
+                <h2 class="jogo13">19</h2><h2 class="v13">10</h2><h2 class="e13">10</h2><h2 class="d13">10</h2>
+                <h2 class="gp13">10</h2><h2 class="gc13">10</h2><h2 class="s13">10</h2></h3></h3></p></h3></p> 
+            <br>
+            <hr>
+            <br>
+            <p class="pal"><h3 class="numeros">14°<img class="pal2" src="images/sao-paulo.svg" alt=""><h3 class="time">SAO<h2 class="pontuação13">18</h2>
+                <h2 class="jogo14">19</h2><h2 class="v14">10</h2><h2 class="e14">10</h2><h2 class="d14">10</h2>
+                <h2 class="gp14">10</h2><h2 class="gc14">10</h2><h2 class="s14">10</h2></h3></h3></p></h3></p>
+            <br>
+            <hr>
+            <br>
+            <p class="pal"><h3 class="numeros">15°<img class="pal2" src="images/sao-paulo.svg" alt=""><h3 class="time">SAO<h2 class="pontuação14">18</h2>
+                <h2 class="jogo15">19</h2><h2 class="v15">10</h2><h2 class="e15">10</h2><h2 class="d15">10</h2>
+                <h2 class="gp15">10</h2><h2 class="gc15">10</h2><h2 class="s15">10</h2></h3></h3></p></h3></p>
+            <br>
+            <hr>
+            <br>
+            <p class="pal"><h3 class="numeros">16°<img class="pal2" src="images/sao-paulo.svg" alt=""><h3 class="time">SAO<h2 class="pontuação15">18</h2>
+                <h2 class="jogo16">19</h2><h2 class="v16">10</h2><h2 class="e16">10</h2><h2 class="d16">10</h2>
+                <h2 class="gp16">10</h2><h2 class="gc16">10</h2><h2 class="s16">10</h2></h3></h3></p></h3></p>
+            <br>
+            <hr>
+            <br>
+            <p class="pal"><h3 class="numeros">17°<img class="pal2" src="images/sao-paulo.svg" alt=""><h3 class="time">SAO<h2 class="pontuação16">18</h2>
+                <h2 class="jogo17">19</h2><h2 class="v17">10</h2><h2 class="e17">10</h2><h2 class="d17">10</h2>
+                <h2 class="gp17">10</h2><h2 class="gc17">10</h2><h2 class="s17">10</h2></h3></h3></p></h3></p> 
+            <br>
+            <hr>
+            <br>
+            <p class="pal"><h3 class="numeros">18°<img class="pal2" src="images/sao-paulo.svg" alt=""><h3 class="time">SAO<h2 class="pontuação17">18</h2>
+                <h2 class="jogo18">19</h2><h2 class="v18">10</h2><h2 class="e18">10</h2><h2 class="d18">10</h2>
+                <h2 class="gp18">10</h2><h2 class="gc18">10</h2><h2 class="s18">10</h2></h3></h3></p></h3></p>
+            <br>
+            <hr>
+            <br>
+            <p class="pal"><h3 class="numeros">19°<img class="pal2" src="images/sao-paulo.svg" alt=""><h3 class="time">SAO<h2 class="pontuação18">18</h2>
+                <h2 class="jogo19">19</h2><h2 class="v19">10</h2><h2 class="e19">10</h2><h2 class="d19">10</h2>
+                <h2 class="gp19">10</h2><h2 class="gc19">10</h2><h2 class="s19">10</h2></h3></h3></p></h3></p>
+            <br>
+            <hr>
+            <br>
+            <p class="pal"><h3 class="numeros">20°<img class="pal2" src="images/sao-paulo.svg" alt=""><h3 class="time">SAO<h2 class="pontuação19">18</h2>
+                <h2 class="jogo20">19</h2><h2 class="v20">10</h2><h2 class="e20">10</h2><h2 class="d20">10</h2>
+                <h2 class="gp20">10</h2><h2 class="gc20">10</h2><h2 class="s20">10</h2></h3></h3></p></h3></p>    
+    </div>
     <footer>&copy;Todos os direitos reservados.<br><br>
         
         <a href="https://pt-br.facebook.com/">
