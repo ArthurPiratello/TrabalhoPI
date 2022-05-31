@@ -101,7 +101,7 @@ img{
 }
 
 footer{
-    padding: 10px;
+    padding: 14px;
     clear: both;
     background-color:#0033cc;
     bottom: 0;
@@ -110,7 +110,8 @@ footer{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
     text-align: center;
-    margin-top: 970px;    
+    margin-top: 970px;
+    margin-left: -500px;    
     
 }
 
@@ -149,7 +150,7 @@ a{
 .slider {
     height: 380px;
     left: 50%;
-    margin: -100px -400px;
+    margin: -120px -600px;
     position: absolute;
     top: 30%;
     width: 1203px;
@@ -966,7 +967,7 @@ margin-top: 100px;
         float: right;
         margin: 40px;
         padding: 30px;
-        margin: 700px 100px;
+        margin: 100px 300px;
         border: solid 2px;
         border-color: #aaff00;      
         background-position: center;
@@ -1851,7 +1852,73 @@ margin-top: 100px;
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 700px;
     color: #aaff00;
-    margin-left: 300px;
+    margin-left: 100px;
+}
+
+.not2{
+    font-size: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 200px;
+    color: #aaff00;
+    margin-left: -400px;
+}
+.card{
+width: 300px;
+height: 400px;
+position: relative;
+overflow: hidden;
+background-size: cover;
+margin-top: 70px;
+padding: 30px;
+left: 20px;
+margin-left: -400px;
+margin-top: 70px;
+}
+
+.card-image{
+position: absolute;
+inset: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: transform .75s;
+}
+
+.card:hover .card-image{
+    transform: scale(1.15);
+}
+
+.card-title{
+position: absolute;
+left: 15px;
+bottom: 15px;
+font-size: 30px;
+font-family: Arial, Helvetica, sans-serif;
+color: white;
+}
+
+.noticia2{
+margin-left: 330px;
+margin-top: -470px;
+}
+
+.card-title2{
+position: absolute;
+left: 15px;
+bottom: 15px;
+font-size: 30px;
+font-family: Arial, Helvetica, sans-serif;
+color: white;
+}
+
+.noticia3{
+margin-left: 660px;
+margin-top: -470px;
+}
+
+.noticia4{
+margin-left: 990px;
+margin-top: -470px;
 }
     </style>
     
@@ -2016,7 +2083,7 @@ margin-top: 100px;
     <div class="tabela">
         <div class="table">
             <h2 class="rodada">Rodada 20</h4><br>
-            <p class="brasileirao3"><a href="Brasileirão.html"><b class="br1">Brasileirão 2022</b></a></p><br>
+            <p class="brasileirao3"><b class="br1">Brasileirão 2022</b></p><br>
             <p class="class"><h3 class="cl1">Classificação_____________ P ______ J ______ V ______ E ______ D ______ GP ______
                  GC ______ SG __________</p>           
             <hr>
@@ -2142,6 +2209,38 @@ margin-top: 100px;
                 <h2 class="jogo20">19</h2><h2 class="v20">10</h2><h2 class="e20">10</h2><h2 class="d20">10</h2>
                 <h2 class="gp20">10</h2><h2 class="gc20">10</h2><h2 class="s20">10</h2></h3></h3></p></h3></p>    
     </div>
+
+    <div class="noticias2">
+        <p class="not2"><b>NOTÍCIAS</b></p>
+    </div>
+    
+    <div class="card">         
+        <img src="images/chile.webp" alt="" class="card-image">
+        <h3 class="card-title">Chile quer que FIFA tire o Equador da Copa.</h3>
+    </div>
+    
+    <div class="noticia2">
+        <div class="card">         
+            <img src="images/messi2.webp" alt="" class="card-image">
+            <h3 class="card-title2">3 dos 5 jogos com mais ingressos vendidos são da Argentina.</h3>
+        </div>
+    </div>
+    
+    <div class="noticia3">
+        <div class="card">         
+            <img src="images/ar.webp" alt="" class="card-image">
+            <h3 class="card-title2">Estádios da Copa terão ar-condicionados.</h3>
+        </div>
+    </div>
+    
+    <div class="noticia4">
+        <div class="card">         
+            <img src="images/selecao3.webp" alt="" class="card-image">
+            <h3 class="card-title">Brasil pode ter caminho díficil na Copa.</h3>
+        </div>
+    </div>
+    
+
     <footer>&copy;Todos os direitos reservados.<br><br>
         
         <a href="https://pt-br.facebook.com/">
@@ -2155,7 +2254,7 @@ margin-top: 100px;
         <a href="https://twitter.com/">
             <img class="facebook" src="images/3225183_app_logo_media_popular_social_icon.png" width="10px"></a>
         </div>
- </footer>
+    </footer>
      
 </body>
 </html>

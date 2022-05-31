@@ -1,5 +1,5 @@
 <?php
-include_once('index.php');
+include_once('inde.php');
 $nome=$_POST['nome'];
 $email=$_POST['email'];
 $mensagem=$_POST['mensagem'];
