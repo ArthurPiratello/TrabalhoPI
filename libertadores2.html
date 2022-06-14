@@ -12,10 +12,11 @@
         }
 
 body{
-    background-image: url("images/libertad.png");
+    background-image: url("images/fundobrasileirão.png");
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-size: cover;
+    background-attachment: fixed;
+    
 }
 
 
@@ -25,6 +26,7 @@ img{
         width: 100px;
         margin-left: 10px;
         margin-bottom: 32px;
+        
 }
 
 *{
@@ -32,13 +34,14 @@ img{
 }
 
 .button1{
-    color:white;
+    color:#aaff00;
     font-size: 20px;
     font-family:"Verdana";
     background-color:transparent;
     border: none;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 20px;
+    margin-left: 400px;
 
 }
 
@@ -48,26 +51,26 @@ img{
 }
 
 .button1 span:after {
-        content: "\00bb";
+        content: "<";
         position: absolute;
         opacity: 0;
         top: 0;
-        right: -20px;
+        left: -20px;
         transition: 0.5s;
       }
  
       .button1:hover span {
-        padding-right: 25px;
+        padding-left: 25px;
       }
  
       .button1:hover span:after {
         opacity: 1;
-        right: 0;
+        left: 0;
       }
 
       .button1:hover {
             background-color:black;
-            color:white;
+            color:#aaff00;
       }
 
       .btn{
@@ -87,7 +90,7 @@ img{
 
       .logo1{
           width: 90px;
-          margin-top: -190px;
+          margin-top: -30px;
           margin-left: 10px;
       }
       
@@ -98,7 +101,7 @@ img{
 }
 
 footer{
-    padding: 10px;
+    padding: 14px;
     clear: both;
     background-color:#0033cc;
     bottom: 0;
@@ -107,12 +110,13 @@ footer{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
     text-align: center;
-    margin-top: 970px;    
+    margin-top: 970px;
+    margin-left: -500px;    
     
 }
 
 .facebook{
-    width: 30px;
+    width: 40px;
 }
 
 a{
@@ -146,12 +150,10 @@ a{
 .slider {
     height: 380px;
     left: 50%;
-    margin: -190px -635px;
+    margin: -120px -600px;
     position: absolute;
     top: 30%;
     width: 1203px;
-    display: flex;
-flex-direction: column;
     /*box-shadow*/
     
 }
@@ -260,7 +262,7 @@ flex-direction: column;
     font-size: 70px;
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 700px;
-    color: white;
+    color: #aaff00;
     margin-left: 60px;
 }
 
@@ -327,7 +329,7 @@ margin-top: -470px;
     font-size: 70px;
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 700px;
-    color: white;
+    color: #aaff00;
     margin-left: 60px;
     margin-top: 200px;
 }
@@ -638,8 +640,8 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 color: white;
 text-align: center;
 margin-left: 130px;
-margin-bottom: -1980px;
-margin-top: -10px;
+margin-bottom: -2660px;
+margin-top: 100px;
 }
 
 .card9:hover .card-image9{
@@ -682,7 +684,7 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 color: white;
 text-align: center;
 margin-left: 620px;
-margin-bottom: -1980px;
+margin-bottom: -2660px;
 margin-top: 100px;
 }
 
@@ -726,7 +728,7 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 color: white;
 text-align: center;
 margin-left: 1030px;
-margin-bottom: -1980px;
+margin-bottom: -2660px;
 margin-top: 100px;
 }
 
@@ -770,7 +772,7 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 color: white;
 text-align: center;
 margin-left: 1380px;
-margin-bottom: -1980px;
+margin-bottom: -2660px;
 margin-top: 100px;
 }
 
@@ -814,7 +816,7 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 color: white;
 text-align: center;
 margin-left: 170px;
-margin-bottom: -2380px;
+margin-bottom: -3060px;
 margin-top: 100px;
 }
 
@@ -957,30 +959,228 @@ margin-top: 100px;
 .card16:hover{
     border-radius: 30%;
 }
+
+.not{
+    font-size: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 700px;
+    color: #aaff00;
+    margin-left: 100px;
+}
+
+.not2{
+    font-size: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 200px;
+    color: #aaff00;
+    margin-left: -400px;
+}
+.card{
+width: 300px;
+height: 400px;
+position: relative;
+overflow: hidden;
+background-size: cover;
+margin-top: 170px;
+padding: 30px;
+left: 20px;
+margin-left: -420px;
+margin-top: 70px;
+border-radius: 30px;
+}
+
+.card-image{
+position: absolute;
+inset: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: transform .75s;
+}
+
+.card:hover .card-image{
+    transform: scale(1.15);
+}
+
+.card-title{
+position: absolute;
+left: 15px;
+bottom: 15px;
+font-size: 30px;
+font-family: Arial, Helvetica, sans-serif;
+color: white;
+}
+
+.noticia2{
+margin-left: 380px;
+margin-top: -330px;
+}
+
+.card-title2{
+position: absolute;
+left: 15px;
+bottom: 15px;
+font-size: 30px;
+font-family: Arial, Helvetica, sans-serif;
+color: white;
+}
+
+.noticia3{
+margin-left: 1000px;
+margin-top: -530px;
+}
+
+.noticia4{
+margin-left: 1050px;
+margin-top: -470px;
+}
+
+.esp{
+    font-size: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 700px;
+    color: #aaff00;
+    margin-left: -390px;
+    margin-top: 200px;
+}
+
+.card2{
+width: 500px;
+height: 400px;
+position: relative;
+overflow: hidden;
+background-size: cover;
+margin-top: 70px;
+padding: 30px;
+left: 20px;
+margin-left: -420px;
+margin-top: 70px;
+
+}
+
+.card-image2{
+position: absolute;
+inset: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: transform .75s;
+}
+
+.card-title5{
+position: absolute;
+left: 15px;
+bottom: 15px;
+font-size: 30px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+color: white;
+text-align: center;
+margin-left: 110px;
+margin-bottom: 400px;
+}
+
+.card2:hover .card-image2{
+    transform: scale(1.15);
+}
+
+.card3{
+width: 500px;
+height: 400px;
+position: relative;
+overflow: hidden;
+background-size: cover;
+margin-top: 70px;
+padding: 30px;
+left: 20px;
+margin-left: 160px;
+margin-top: -460px;
+
+}
+
+.card-image3{
+position: absolute;
+inset: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: transform .75s;
+}
+
+.card-title6{
+position: absolute;
+left: 15px;
+bottom: 15px;
+font-size: 30px;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+color: white;
+text-align: center;
+margin-left: 70px;
+margin-bottom: 400px;
+}
+
+.card3:hover .card-image3{
+    transform: scale(1.15);
+}
+
+.card4{
+width: 500px;
+height: 400px;
+position: relative;
+overflow: hidden;
+background-size: cover;
+margin-top: 70px;
+padding: 30px;
+left: 20px;
+margin-left: 740px;
+margin-top: -460px;
+
+}
+
+.card-image4{
+position: absolute;
+inset: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: transform .75s;
+}
+
+.card-title7{
+position: absolute;
+left: 15px;
+bottom: 15px;
+font-size: 30px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+color: white;
+text-align: center;
+margin-left: 150px;
+margin-bottom: 400px;
+}
+
+.card4:hover .card-image4{
+    transform: scale(1.15);
+}
     </style>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    
 
 </head>
 <body>
     
-        <a href="Projeto_Integrativo.html"></a><button class="button1"><span><b>Voltar</b></span></button></a>
+
+        <a href="index.html"><button class="button1"><span><b>Início</b></span></button></a>
     
 
     
 
     <div class="copa">
-<img class="logo1" src="images/conmebol-logo_pt.png" alt="">
+<img class="logo1" src="images/logo-brasileirao-vertical-branco.svg" alt="">
     </div>
 
     
     <div class="slider">
         <ul class="frames">
             <li id="one" class="slide">
-                <img src="images/jogo1.png" alt="Slide 1">
+                <img src="images/ameava.png" alt="Slide 1">
                 <nav>
                     <a class="prev" href="#sixteen">&larr;</a>
                     <a class="next" href="#two">&rarr;</a>
@@ -1049,48 +1249,6 @@ margin-top: 100px;
                     <a class="next" href="#eleven">&rarr;</a>
                 </nav>
             </li>     
-            <li id="eleven" class="slide">
-                <img src="images/jogo11.png" alt="Slide 11">
-                <nav>
-                    <a class="prev" href="#ten">&larr;</a>
-                    <a class="next" href="#twelve">&rarr;</a>
-                </nav>
-            </li>     
-            <li id="twelve" class="slide">
-                <img src="images/jogo12.png" alt="Slide 12">
-                <nav>
-                    <a class="prev" href="#eleven">&larr;</a>
-                    <a class="next" href="#thirteen">&rarr;</a>
-                </nav>
-            </li>     
-            <li id="thirteen" class="slide">
-                <img src="images/jogo13.png" alt="Slide 13">
-                <nav>
-                    <a class="prev" href="#twelve">&larr;</a>
-                    <a class="next" href="#fourteen">&rarr;</a>
-                </nav>
-            </li>     
-            <li id="fourteen" class="slide">
-                <img src="images/jogo14.png" alt="Slide 14">
-                <nav>
-                    <a class="prev" href="#thirteen">&larr;</a>
-                    <a class="next" href="#fifteen">&rarr;</a>
-                </nav>
-            </li>     
-            <li id="fifteen" class="slide">
-                <img src="images/jogo15.png" alt="Slide 15">
-                <nav>
-                    <a class="prev" href="#fourteen">&larr;</a>
-                    <a class="next" href="#sixteen">&rarr;</a>
-                </nav>
-            </li>     
-            <li id="sixteen" class="slide">
-                <img src="images/jogo16.png" alt="Slide 16">
-                <nav>
-                    <a class="prev" href="#fifteen">&larr;</a>
-                    <a class="next" href="#one">&rarr;</a>
-                </nav>
-            </li>                         
             <li class="quicknav">
                 <ul>
                     <li><a href="#one"></a></li>
@@ -1102,122 +1260,67 @@ margin-top: 100px;
                     <li><a href="#seven"></a></li>
                     <li><a href="#eigth"></a></li>
                     <li><a href="#nine"></a></li>
-                    <li><a href="#ten"></a></li>
-                    <li><a href="#eleven"></a></li>
-                    <li><a href="#twelve"></a></li>
-                    <li><a href="#thirteen"></a></li>
-                    <li><a href="#fourteen"></a></li>
-                    <li><a href="#fifteen"></a></li>
-                    <li><a href="#sixteen"></a></li>                       
+                    <li><a href="#ten"></a></li>                     
                 </ul>
             </li>
         </ul>
+    </div> 
+
+    
+
+    <div class="noticias2">
+        <p class="not2"><b>NOTÍCIAS</b></p>
     </div>
     
-<div class="noticias">
-    <p class="not"><b>NOTÍCIAS</b></p>
-</div>
-
-<div class="card">         
-    <img src="images/chile.webp" alt="" class="card-image">
-    <h3 class="card-title">Chile quer que FIFA tire o Equador da Copa.</h3>
-</div>
-
-<div class="noticia2">
     <div class="card">         
-        <img src="images/messi2.webp" alt="" class="card-image">
-        <h3 class="card-title2">3 dos 5 jogos com mais ingressos vendidos são da Argentina.</h3>
+        <img src="images/chile.webp" alt="" class="card-image">
+        <h3 class="card-title">Chile quer que FIFA tire o Equador da Copa.</h3>
     </div>
-</div>
-
-<div class="noticia3">
-    <div class="card">         
-        <img src="images/ar.webp" alt="" class="card-image">
-        <h3 class="card-title2">Estádios da Copa terão ar-condicionados.</h3>
-    </div>
-</div>
-
-<div class="noticia4">
-    <div class="card">         
-        <img src="images/selecao3.webp" alt="" class="card-image">
-        <h3 class="card-title">Brasil pode ter caminho díficil na Copa.</h3>
-    </div>
-</div>
-
-<div class="especiais">
-    <p class="esp"><b>ESPECIAIS</b></p>
-</div>
-
-<div class="card2">         
-    <img src="images/briga.png" alt="" class="card-image2">
-    <h3 class="card-title5">BRIGAS HISTÓRICAS</h3>
-</div>
-
-<div class="card3">         
-    <img src="images/pelé.png" alt="" class="card-image3">
-    <h3 class="card-title6">LENDAS</h3>
-</div>
-
-<div class="card4">         
-    <img src="images/palmeirascampeao.jpg" alt="" class="card-image4">
-    <h3 class="card-title7">OS CAMPEÕES</h3>
-</div>  
-
-<div class="videos">
-    <p class="esp"><b>VÍDEOS</b></p>
-</div>
-
-
-
-<div class="card9">         
-    <img src="images/final2018.jpeg" alt="" class="card-image9">
-</div>
-
-    <h3 class="card-title12">FINAL 2018</h3>  
-
-<div class="card10">         
-    <img src="images/final2019.webp" alt="" class="card-image10">
-</div>
-
-    <h3 class="card-title13">FINAL 2019</h3>
-
-<div class="card11">         
-    <img src="images/final2020.jpeg" alt="" class="card-image11">
-</div>
-
-    <h3 class="card-title14">FINAL 2020</h3>
-
-<div class="card12">         
-    <img src="images/final2021.jpg" alt="" class="card-image12">
-</div>
     
-    <h3 class="card-title15">FINAL 2021</h3>
+    <div class="noticia2">
+        <div class="card">         
+            <img src="images/messi2.webp" alt="" class="card-image">
+            <h3 class="card-title2">3 dos 5 jogos com mais ingressos vendidos são da Argentina.</h3>
+        </div>
+    </div>
+    
+    <div class="noticia3">
+        <div class="card">         
+            <img src="images/ar.webp" alt="" class="card-image">
+            <h3 class="card-title2">Estádios da Copa terão ar-condicionados.</h3>
+        </div>
+    </div>
 
-<div class="card13">         
-    <img src="images/lib2022.jpg" alt="" class="card-image13">
-</div>
-        
-    <h3 class="card-title16">LIBERTADORES 2022</h3>
+    <div class="especiais">
+        <p class="esp"><b>HISTÓRIA</b></p>
+    </div>
+    
+    <div class="card2">         
+        <img src="images/neymar-ronaldinhogaucho-ae.webp" alt="" class="card-image2">
+        <h3 class="card-title5"><b>JOGOS HISTÓRICOS</b></h3>
+    </div>
+    
+    <div class="card3">         
+        <img src="images/fred.jpg" alt="" class="card-image3">
+        <h3 class="card-title6">MAIORES ARTILHEIROS</h3>
+    </div>
+    
+    <div class="card4">         
+        <img src="images/galo.jpg" alt="" class="card-image4">
+        <h3 class="card-title7">OS CAMPEÕES</h3>
+    </div>  
     
 
     <footer>&copy;Todos os direitos reservados.<br><br>
         
-        <a href="https://pt-br.facebook.com/">
-            <img class="facebook" src="images/317727_facebook_social media_social_icon.png" width="10px">
+        <a href="https://www.cbf.com.br/">
+            <img class="facebook" src="images/cbf.png" width="10px">
         </a>
       
-        <a href="https://www.instagram.com/">
-            <img class="facebook" src="images/2609558_instagram_social media_social_icon.png" width="10px"></a>
-        </div>
-
-        <a href="https://twitter.com/">
-            <img class="facebook" src="images/3225183_app_logo_media_popular_social_icon.png" width="10px"></a>
-        </div>
-
         <a href="https://www.fifa.com/">
             <img class="facebook" src="images/fifa.png" width="10px"></a>
         </div>
- </footer>
+    </footer>
      
 </body>
 </html>
