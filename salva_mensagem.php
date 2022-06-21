@@ -4,7 +4,7 @@ $nome=$_POST['nome'];
 $email=$_POST['email'];
 $mensagem=$_POST['mensagem'];
 
-$sql= "INSERT INTO teste
+$sql= "INSERT INTO test
 (nome, email, mensagem) VALUES
 ('$nome', '$email', '$mensagem')";
 $query= mysqli_query($conexão, $sql)

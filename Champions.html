@@ -5,168 +5,1204 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
     <style>
-        header{
-        background-color:#0033cc;
-        padding: 20px;    
-    }
-    
-    .p1{
-        color:chartreuse;
-        font-size:50px;
-        font-family:Verdana;
-    }
-    
-    img{
-            width: 70px;
-            margin-left: 10px;
-    }
-    
-    *{
-        margin: 0px;
-    }
-    
-    .button1{
-        color:white;
-        font-size: 20px;
-        font-family:"Verdana";
-        background-color:#0033cc;
-        border: none;
-        text-align: center;
-    
-    }
-    
-    .button1 span {
-        position: relative;
+
+        h4{
+            margin-top: -25px;
+        }
+
+body{
+    background-image: url("images/fundochampions.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+
+
+img{
+        width: 100px;
+        margin-left: 10px;
+        margin-bottom: 32px;
+}
+
+*{
+    margin: 0px;
+}
+
+.button1{
+    color:#e69900;
+    font-size: 20px;
+    font-family:"Verdana";
+    background-color:transparent;
+    border: none;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 400px;
+
+}
+
+.button1 span {
+    position: relative;
+    transition: 0.5s;
+}
+
+.button1 span:after {
+        content: "<";
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        left: -20px;
         transition: 0.5s;
-    }
-    
-    .button1 span:after {
-            content: "\00bb";
-            position: absolute;
-            opacity: 0;
-            top: 0;
-            right: -20px;
-            transition: 0.5s;
-          }
+      }
+ 
+      .button1:hover span {
+        padding-left: 25px;
+      }
+ 
+      .button1:hover span:after {
+        opacity: 1;
+        left: 0;
+      }
+
+      .button1:hover {
+            background-color:black;
+            color:#e69900;
+      }
+
+      .btn{
+          background-color:white;
+          padding: 10px;
+          width: 100px;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 20px;
+          border-radius: 5px;
+          -webkit-transition-duration: 0.4s; /* Safari */
+          transition-duration: 0.4s;
+          color: darkblue;
+          border: solid 2px;
+          border-color: darkblue;
+      }
+      
+
+      .logo1{
+          width: 120px;
+          margin-top: -45px;
+          margin-left: 10px;
+      }
+      
      
-          .button1:hover span {
-            padding-right: 25px;
-          }
-     
-          .button1:hover span:after {
-            opacity: 1;
-            right: 0;
-          }
+.btn:hover {
+    background-color: darkblue; /* Green */
+    color: white;
+}
+
+footer{
+    padding: 10px;
+    clear: both;
+    background-color:#0033cc;
+    bottom: 0;
+    width: 1903px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 970px;    
     
-          .button1:hover {
-                background-color:black;
-                color:white;
-          }
+}
+
+.facebook{
+    width: 30px;
+}
+
+a{
+    color: #e69900;
     
-          .btn{
-              background-color:white;
-              padding: 10px;
-              width: 100px;
-              font-family: Arial, Helvetica, sans-serif;
-              font-size: 20px;
-              border-radius: 5px;
-              -webkit-transition-duration: 0.4s; /* Safari */
-              transition-duration: 0.4s;
-              color: darkblue;
-              border: solid 2px;
-              border-color: darkblue;
-          }
+}
+.carrosel {
+    width: 60%;     
+}
+
+.carousel-item img {
+    border-radius: 25px;
+
+}
+
+.slider .frames .slide .description {
+    background: transparent;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    /*transition*/
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+/* Slider */
+.slider {
+    height: 380px;
+    left: 50%;
+    margin: -190px -635px;
+    position: absolute;
+    top: 30%;
+    width: 1203px;
+    display: flex;
+flex-direction: column;
+    /*box-shadow*/
     
-          .logo{
-                background-image: url(images/fundochampions.jpg);
-                padding: 70px;
-                background-repeat: no-repeat;
-                background-size: cover;
-                height: 200px;
-                
-            
-          }
-          .logo a{
-              background-position-x: 40px;
-          }
-    
-          .logo1{
-              width: 300px;
-              margin-top: -120px;
-              margin-left: 70px;
-              height: 227px;
-          }
-          
-         
-    .btn:hover {
-        background-color: darkblue; /* Green */
-        color: white;
-    }
-    
-    .escrita{        
-            width: 450px;
-            height: 30px;
-            text-align: justify;
-            float: right;
-            margin: 40px;
-            padding: 30px;
-            margin-right: 1040px;
-            margin-top: -250px;   
-            background-position: center;
-    }
-    
-    .lib{
-        font-size: 25px;
-        font-family: Arial;
-        color: white;
-    }
-    
-    footer{
-        padding: 10px;
-        clear: both;
-        background-color:#0033cc;
-        bottom: 0;
-        width: 2000px;
-        color: white;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 20px;
-        text-align: center;
-        margin-top: 500px;    
-    }
-    
-    .facebook{
-        width: 30px;
-    }
-    
-    a{
-        color: white;
-        text-decoration: none;
-    }
+}
+.slider .frames {
+    height: 500px;
+    position: relative;
+}
+.slider .frames .slide {
+    height: 500px;
+    list-style: none;
+    position: absolute;
+    width: 1200px;
+}
+.slider .slide:target { z-index: 100 }
+.slider .frames .slide img {
+    height: 500px;
+    width: 1200px;
+}
+.slider .frames .slide nav a {
+    background: hsla(0,0%,0%,.75);
+    color: #fff;
+    font-size: 16px;
+    line-height: 50px;
+    margin-top: -25px;
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    top: 50%;
+    width: 50px;
+    visibility: hidden;
+    z-index: 10;
+}
+.slider:hover .frames .slide nav a {
+    opacity: 1;
+    visibility: visible;
+}
+.slider .frames .slide nav .prev {
+    /*border-radius*/
+    -webkit-border-radius: 0 25px 25px 0;
+    -moz-border-radius: 0 25px 25px 0;
+    border-radius: 0 25px 25px 0;
+    left: 0;
+}
+.slider .frames .slide nav .next {
+    /*border-radius*/
+    -webkit-border-radius: 25px 0 0 25px;
+    -moz-border-radius: 25px 0 0 25px;
+    border-radius: 25px 0 0 25px;
+    right: 0;
+}
+.slider .frames .slide nav a:hover { background: #000 }
+.slider .quicknav {
+    bottom: 0;
+    font-size: 0;
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    z-index: 100;
+}
+.slider:hover .quicknav { opacity: .9 }
+.slider .quicknav li { display: inline-block }
+.slider .quicknav a {
+    background: hsla(0,0%,100%,.9);
+    border: 1px solid hsla(0,0%,0%,.9);
+    /*border-radius*/
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    display: block;
+    height: 10px;
+    margin: 10px 5px;
+    text-decoration: none;
+    width: 10px;
+}
+.slider .quicknav a:hover { background: hsla(0,0%,50%,.9) }
+.slider #one:target ~ .quicknav a[href="#one"], .slider #two:target ~ .quicknav a[href="#two"], .slider #three:target ~ .quicknav a[href="#three"], .slider #four:target ~ .quicknav a[href="#four"], .slider #five:target ~ .quicknav a[href="#five"] {
+    background: hsla(0,0%,0%,.9);
+    border-color: hsla(0,0%,100%,.9);
+    background: rgb(244,246,245);
+    /*linear-gradient*/
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(rgba(244,246,245,1),0.01),color-stop(rgba(203,219,219,1),1),color-stop(rgba(216,216,216,1),1));
+    background: -webkit-linear-gradient(top, rgba(244,246,245,1) 1%, rgba(203,219,219,1) 100%, rgba(216,216,216,1) 100%);
+    background: -moz-linear-gradient(top, rgba(244,246,245,1) 1%, rgba(203,219,219,1) 100%, rgba(216,216,216,1) 100%);
+    background: -o-linear-gradient(top, rgba(244,246,245,1) 1%, rgba(203,219,219,1) 100%, rgba(216,216,216,1) 100%);
+    background: linear-gradient(top, rgba(244,246,245,1) 1%, rgba(203,219,219,1) 100%, rgba(216,216,216,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,rgba(244,246,245,1)), color-stop(100%,rgba(203,219,219,1)), color-stop(100%,rgba(216,216,216,1)));
+    background: -webkit-linear-gradient(top, rgba(244,246,245,1) 1%,rgba(203,219,219,1) 100%,rgba(216,216,216,1) 100%);
+    background: -moz-linear-gradient(top, rgba(244,246,245,1) 1%,rgba(203,219,219,1) 100%,rgba(216,216,216,1) 100%);
+    background: -o-linear-gradient(top, rgba(244,246,245,1) 1%,rgba(203,219,219,1) 100%,rgba(216,216,216,1) 100%);
+    background: linear-gradient(top, rgba(244,246,245,1) 1%,rgba(203,219,219,1) 100%,rgba(216,216,216,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f6f5', endColorstr='#d8d8d8',GradientType=0 );
+    /*box-shadow*/
+    -webkit-box-shadow: inset 0 0 3px #000,0 0 2px rgba(0,0,0,.5),0 2px 3px #666;
+    -moz-box-shadow: inset 0 0 3px #000,0 0 2px rgba(0,0,0,.5),0 2px 3px #666;
+    box-shadow: inset 0 0 3px #000,0 0 2px rgba(0,0,0,.5),0 2px 3px #666;
+}
+.description{
+    text-align: center;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.not{
+    font-size: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 700px;
+    color: #e69900;
+    margin-left: 60px;
+}
+
+.card{
+width: 300px;
+height: 400px;
+position: relative;
+overflow: hidden;
+background-size: cover;
+margin-top: 70px;
+padding: 30px;
+left: 20px;
+margin-left: 35px;
+margin-top: 70px;
+}
+
+.card-image{
+position: absolute;
+inset: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: transform .75s;
+}
+
+.card:hover .card-image{
+    transform: scale(1.15);
+}
+
+.card-title{
+position: absolute;
+left: 15px;
+bottom: 15px;
+font-size: 30px;
+font-family: Arial, Helvetica, sans-serif;
+color: white;
+}
+
+.noticia2{
+margin-left: 330px;
+margin-top: -470px;
+}
+
+.card-title2{
+position: absolute;
+left: 15px;
+bottom: 15px;
+font-size: 30px;
+font-family: Arial, Helvetica, sans-serif;
+color: white;
+}
+
+.noticia3{
+margin-left: 660px;
+margin-top: -470px;
+}
+
+.noticia4{
+margin-left: 990px;
+margin-top: -470px;
+}
+
+.esp{
+    font-size: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 700px;
+    color: #e69900;
+    margin-left: 60px;
+    margin-top: 200px;
+}
+
+.card2{
+width: 500px;
+height: 400px;
+position: relative;
+overflow: hidden;
+background-size: cover;
+margin-top: 70px;
+padding: 30px;
+left: 20px;
+margin-left: 35px;
+margin-top: 70px;
+
+}
+
+.card-image2{
+position: absolute;
+inset: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: transform .75s;
+}
+
+.card-title5{
+position: absolute;
+left: 15px;
+bottom: 15px;
+font-size: 30px;
+font-family: Arial, Helvetica, sans-serif;
+color: #e69900;
+text-align: center;
+margin-left: 80px;
+margin-bottom: 330px;
+}
+
+.card2:hover .card-image2{
+    transform: scale(1.15);
+}
+
+.card3{
+width: 500px;
+height: 400px;
+position: relative;
+overflow: hidden;
+background-size: cover;
+margin-top: 70px;
+padding: 30px;
+left: 20px;
+margin-left: 570px;
+margin-top: -400px;
+
+}
+
+.card-image3{
+position: absolute;
+inset: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: transform .75s;
+}
+
+.card-title6{
+position: absolute;
+left: 15px;
+bottom: 15px;
+font-size: 30px;
+font-family: Arial, Helvetica, sans-serif;
+color: #e69900;
+text-align: center;
+margin-left: 180px;
+margin-bottom: 330px;
+}
+
+.card3:hover .card-image3{
+    transform: scale(1.15);
+}
+
+.card4{
+width: 500px;
+height: 400px;
+position: relative;
+overflow: hidden;
+background-size: cover;
+margin-top: 70px;
+padding: 30px;
+left: 20px;
+margin-left: 1100px;
+margin-top: -400px;
+
+}
+
+.card-image4{
+position: absolute;
+inset: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: transform .75s;
+}
+
+.card-title7{
+position: absolute;
+left: 15px;
+bottom: 15px;
+font-size: 30px;
+font-family: Arial, Helvetica, sans-serif;
+color: #e69900;
+text-align: center;
+margin-left: 130px;
+margin-bottom: 330px;
+}
+
+.card4:hover .card-image4{
+    transform: scale(1.15);
+}
+
+.card5{
+width: 300px;
+height: 300px;
+position: relative;
+overflow: hidden;
+background-size: cover;
+margin-top: 70px;
+padding: 30px;
+left: 20px;
+margin-left: 40px;
+margin-top: 80px;
+border-radius: 1000px;
+}
+
+.card-image5{
+position: absolute;
+inset: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: transform .75s;
+}
+
+.card-title8{
+position: absolute;
+left: 15px;
+bottom: 15px;
+font-size: 20px;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color: white;
+text-align: center;
+margin-left: 90px;
+margin-bottom: -2000px;
+margin-top: 3000px;
+}
+
+.card5:hover .card-image5{
+    transform: scale(1.15);
+}
+
+.card6{
+width: 300px;
+height: 300px;
+position: relative;
+overflow: hidden;
+background-size: cover;
+margin-top: 70px;
+padding: 30px;
+left: 20px;
+margin-left: 400px;
+margin-top: -300px;
+border-radius: 1000px;
+}
+
+.card-image6{
+position: absolute;
+inset: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: transform .75s;
+}
+
+.card-title9{
+position: absolute;
+left: 15px;
+bottom: 15px;
+font-size: 20px;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color: white;
+text-align: center;
+margin-left: 430px;
+margin-bottom: -2000px;
+margin-top: 20px;
+}
+
+.card6:hover .card-image6{
+    transform: scale(1.15);
+}
+
+.card7{
+width: 300px;
+height: 300px;
+position: relative;
+overflow: hidden;
+background-size: cover;
+margin-top: 70px;
+padding: 30px;
+left: 20px;
+margin-left: 750px;
+margin-top: -300px;
+border-radius: 1000px;
+}
+
+.card-image7{
+position: absolute;
+inset: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: transform .75s;
+}
+
+.card-title10{
+position: absolute;
+left: 15px;
+bottom: 15px;
+font-size: 20px;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color: white;
+text-align: center;
+margin-left: 870px;
+margin-bottom: -2000px;
+margin-top: 20px;
+}
+
+.card7:hover .card-image7{
+    transform: scale(1.15);
+}
+
+.card8{
+width: 300px;
+height: 300px;
+position: relative;
+overflow: hidden;
+background-size: cover;
+margin-top: 70px;
+padding: 30px;
+left: 20px;
+margin-left: 1100px;
+margin-top: -300px;
+border-radius: 1020px;
+}
+
+.card-image8{
+position: absolute;
+inset: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: transform .75s;
+}
+
+.card-title11{
+position: absolute;
+left: 15px;
+bottom: 15px;
+font-size: 20px;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color: white;
+text-align: center;
+margin-left: 1220px;
+margin-bottom: -2000px;
+margin-top: 20px;
+}
+
+.card8:hover .card-image8{
+    transform: scale(1.15);
+}
+
+.card9{
+width: 400px;
+height: 300px;
+position: relative;
+overflow: hidden;
+background-size: cover;
+margin-top: 70px;
+padding: 30px;
+left: 20px;
+margin-left: 40px;
+margin-top: 80px;
+border-radius: 25px;
+}
+
+.card-image9{
+position: absolute;
+inset: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: transform .75s;
+}
+
+.card-title12{
+position: absolute;
+left: 15px;
+bottom: 15px;
+font-size: 30px;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color: #e69900;
+text-align: center;
+margin-left: 170px;
+margin-bottom: -1980px;
+margin-top: -10px;
+}
+
+.card9:hover .card-image9{
+    transform: scale(1.15);
+}
+
+.card9:hover{
+    border-radius: 30%;
+}
+
+.card10{
+width: 400px;
+height: 300px;
+position: relative;
+overflow: hidden;
+background-size: cover;
+margin-top: 70px;
+padding: 30px;
+left: 20px;
+margin-left: 460px;
+margin-top: -300px;
+border-radius: 25px;
+}
+
+.card-image10{
+position: absolute;
+inset: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: transform .75s;
+}
+
+.card-title13{
+position: absolute;
+left: 15px;
+bottom: 15px;
+font-size: 30px;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color: #e69900;
+text-align: center;
+margin-left: 590px;
+margin-bottom: -1980px;
+margin-top: 100px;
+}
+
+.card10:hover .card-image10{
+    transform: scale(1.15);
+}
+
+.card10:hover{
+    border-radius: 30%;
+}
+
+.card11{
+width: 400px;
+height: 300px;
+position: relative;
+overflow: hidden;
+background-size: cover;
+margin-top: 70px;
+padding: 30px;
+left: 20px;
+margin-left: 880px;
+margin-top: -300px;
+border-radius: 25px;
+}
+
+.card-image11{
+position: absolute;
+inset: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: transform .75s;
+}
+
+.card-title14{
+position: absolute;
+left: 15px;
+bottom: 15px;
+font-size: 30px;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color: #e69900;
+text-align: center;
+margin-left: 1010px;
+margin-bottom: -1980px;
+margin-top: 100px;
+}
+
+.card11:hover .card-image11{
+    transform: scale(1.15);
+}
+
+.card11:hover{
+    border-radius: 30%;
+}
+
+.card12{
+width: 400px;
+height: 300px;
+position: relative;
+overflow: hidden;
+background-size: cover;
+margin-top: 70px;
+padding: 30px;
+left: 20px;
+margin-left: 1300px;
+margin-top: -300px;
+border-radius: 25px;
+}
+
+.card-image12{
+position: absolute;
+inset: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: transform .75s;
+}
+
+.card-title15{
+position: absolute;
+left: 15px;
+bottom: 15px;
+font-size: 30px;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color: #e69900;
+text-align: center;
+margin-left: 1420px;
+margin-bottom: -1980px;
+margin-top: 100px;
+}
+
+.card12:hover .card-image12{
+    transform: scale(1.15);
+}
+
+.card12:hover{
+    border-radius: 30%;
+}
+
+.card13{
+width: 400px;
+height: 300px;
+position: relative;
+overflow: hidden;
+background-size: cover;
+margin-top: 70px;
+padding: 30px;
+left: 20px;
+margin-left: 40px;
+margin-top: 100px;
+border-radius: 25px;
+}
+
+.card-image13{
+position: absolute;
+inset: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: transform .75s;
+}
+
+.card-title16{
+position: absolute;
+left: 15px;
+bottom: 15px;
+font-size: 30px;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color: #e69900;
+text-align: center;
+margin-left: 103px;
+margin-bottom: -2380px;
+margin-top: 100px;
+}
+
+.card13:hover .card-image13{
+    transform: scale(1.15);
+}
+
+.card13:hover{
+    border-radius: 30%;
+}
+
+.card14{
+width: 400px;
+height: 300px;
+position: relative;
+overflow: hidden;
+background-size: cover;
+margin-top: 70px;
+padding: 30px;
+left: 20px;
+margin-left: 460px;
+margin-top: -300px;
+border-radius: 25px;
+}
+
+.card-image14{
+position: absolute;
+inset: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: transform .75s;
+}
+
+.card-title17{
+position: absolute;
+left: 15px;
+bottom: 15px;
+font-size: 30px;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color: white;
+text-align: center;
+margin-left: 540px;
+margin-bottom: -3060px;
+margin-top: 100px;
+}
+
+.card14:hover .card-image14{
+    transform: scale(1.15);
+}
+
+.card14:hover{
+    border-radius: 30%;
+}
+
+.card15{
+width: 400px;
+height: 300px;
+position: relative;
+overflow: hidden;
+background-size: cover;
+margin-top: 70px;
+padding: 30px;
+left: 20px;
+margin-left: 880px;
+margin-top: -300px;
+border-radius: 25px;
+}
+
+.card-image15{
+position: absolute;
+inset: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: transform .75s;
+}
+
+.card-title18{
+position: absolute;
+left: 15px;
+bottom: 15px;
+font-size: 30px;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color: white;
+text-align: center;
+margin-left: 930px;
+margin-bottom: -3060px;
+margin-top: 100px;
+}
+
+.card15:hover .card-image15{
+    transform: scale(1.15);
+}
+
+.card15:hover{
+    border-radius: 30%;
+}
+
+.card16{
+width: 400px;
+height: 300px;
+position: relative;
+overflow: hidden;
+background-size: cover;
+margin-top: 70px;
+padding: 30px;
+left: 20px;
+margin-left: 1300px;
+margin-top: -300px;
+border-radius: 25px;
+}
+
+.card-image16{
+position: absolute;
+inset: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: transform .75s;
+}
+
+.card-title19{
+position: absolute;
+left: 15px;
+bottom: 15px;
+font-size: 30px;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color: white;
+text-align: center;
+margin-left: 1350px;
+margin-bottom: -3060px;
+margin-top: 100px;
+}
+
+.card16:hover .card-image16{
+    transform: scale(1.15);
+}
+
+.card16:hover{
+    border-radius: 30%;
+}
     </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+
 </head>
 <body>
-    <header class="cabeçalho">
-        <p class="p1"><b>DriblaÊ</b><img src="images/ball3.png" alt=""></p>
-        <button class="button1"><a href="Projeto_Integrativo.html"><span><b>Voltar</b></span></a></button>
-     </header>
-
-    <div class="logo">
-
-    </div>
-
-    <div class="copa">
-        <img class="logo1" src="images/champions.webp" alt="">
-    </div>
+    
+       <button class="button1"><a href="index.html"><span><b>Início</b></span></a></button>
+    
 
     
 
-    <div class="escrita">
-        <div class="zoom">
-            <h4 class="lib">UEFA Champions League 22/23</h4>
-        </div>
+    <div class="copa">
+<img class="logo1" src="images/logo_dark.svg" alt="">
     </div>
+
+    
+    <div class="slider">
+        <ul class="frames">
+            <li id="one" class="slide">
+                <img src="images/jogo1.png" alt="Slide 1">
+                <nav>
+                    <a class="prev" href="#sixteen">&larr;</a>
+                    <a class="next" href="#two">&rarr;</a>
+                </nav>                
+            </li>
+            <li id="two" class="slide">
+                <img src="images/jogo2.png" alt="Slide 2">
+                <nav>
+                    <a class="prev" href="#one">&larr;</a>
+                    <a class="next" href="#three">&rarr;</a>
+                </nav>                
+            </li>
+            <li id="three" class="slide">
+                <img src="images/jogo3.png" alt="Slide 3">
+                <nav>
+                    <a class="prev" href="#two">&larr;</a>
+                    <a class="next" href="#four">&rarr;</a>
+                </nav>                
+            </li>           
+            <li id="four" class="slide">
+                <img src="images/jogo4.png" alt="Slide 4">
+                <nav>
+                    <a class="prev" href="#three">&larr;</a>
+                    <a class="next" href="#five">&rarr;</a>
+                </nav>
+            </li> 
+            <li id="five" class="slide">
+                <img src="images/jogo5.png" alt="Slide 5">
+                <nav>
+                    <a class="prev" href="#four">&larr;</a>
+                    <a class="next" href="#six">&rarr;</a>
+                </nav>
+            </li>     
+            <li id="six" class="slide">
+                <img src="images/jogo6.png" alt="Slide 6">
+                <nav>
+                    <a class="prev" href="#five">&larr;</a>
+                    <a class="next" href="#seven">&rarr;</a>
+                </nav>
+            </li>     
+            <li id="seven" class="slide">
+                <img src="images/jogo7.png" alt="Slide 7">
+                <nav>
+                    <a class="prev" href="#six">&larr;</a>
+                    <a class="next" href="#eigth">&rarr;</a>
+                </nav>
+            </li>     
+            <li id="eigth" class="slide">
+                <img src="images/jogo8.png" alt="Slide 8">
+                <nav>
+                    <a class="prev" href="#seven">&larr;</a>
+                    <a class="next" href="#nine">&rarr;</a>
+                </nav>
+            </li>     
+            <li id="nine" class="slide">
+                <img src="images/jogo9.png" alt="Slide 9">
+                <nav>
+                    <a class="prev" href="#eigth">&larr;</a>
+                    <a class="next" href="#ten">&rarr;</a>
+                </nav>
+            </li>     
+            <li id="ten" class="slide">
+                <img src="images/jogo10.png" alt="Slide 10">
+                <nav>
+                    <a class="prev" href="#nine">&larr;</a>
+                    <a class="next" href="#eleven">&rarr;</a>
+                </nav>
+            </li>     
+            <li id="eleven" class="slide">
+                <img src="images/jogo11.png" alt="Slide 11">
+                <nav>
+                    <a class="prev" href="#ten">&larr;</a>
+                    <a class="next" href="#twelve">&rarr;</a>
+                </nav>
+            </li>     
+            <li id="twelve" class="slide">
+                <img src="images/jogo12.png" alt="Slide 12">
+                <nav>
+                    <a class="prev" href="#eleven">&larr;</a>
+                    <a class="next" href="#thirteen">&rarr;</a>
+                </nav>
+            </li>     
+            <li id="thirteen" class="slide">
+                <img src="images/jogo13.png" alt="Slide 13">
+                <nav>
+                    <a class="prev" href="#twelve">&larr;</a>
+                    <a class="next" href="#fourteen">&rarr;</a>
+                </nav>
+            </li>     
+            <li id="fourteen" class="slide">
+                <img src="images/jogo14.png" alt="Slide 14">
+                <nav>
+                    <a class="prev" href="#thirteen">&larr;</a>
+                    <a class="next" href="#fifteen">&rarr;</a>
+                </nav>
+            </li>     
+            <li id="fifteen" class="slide">
+                <img src="images/jogo15.png" alt="Slide 15">
+                <nav>
+                    <a class="prev" href="#fourteen">&larr;</a>
+                    <a class="next" href="#sixteen">&rarr;</a>
+                </nav>
+            </li>     
+            <li id="sixteen" class="slide">
+                <img src="images/jogo16.png" alt="Slide 16">
+                <nav>
+                    <a class="prev" href="#fifteen">&larr;</a>
+                    <a class="next" href="#one">&rarr;</a>
+                </nav>
+            </li>                         
+            <li class="quicknav">
+                <ul>
+                    <li><a href="#one"></a></li>
+                    <li><a href="#two"></a></li> 
+                    <li><a href="#three"></a></li>    
+                    <li><a href="#four"></a></li>
+                    <li><a href="#five"></a></li>
+                    <li><a href="#six"></a></li>
+                    <li><a href="#seven"></a></li>
+                    <li><a href="#eigth"></a></li>
+                    <li><a href="#nine"></a></li>
+                    <li><a href="#ten"></a></li>
+                    <li><a href="#eleven"></a></li>
+                    <li><a href="#twelve"></a></li>
+                    <li><a href="#thirteen"></a></li>
+                    <li><a href="#fourteen"></a></li>
+                    <li><a href="#fifteen"></a></li>
+                    <li><a href="#sixteen"></a></li>                       
+                </ul>
+            </li>
+        </ul>
+    </div>
+    
+<div class="noticias">
+    <p class="not"><b>NOTÍCIAS</b></p>
+</div>
+
+<div class="card">         
+    <img src="images/chile.webp" alt="" class="card-image">
+    <h3 class="card-title">Chile quer que FIFA tire o Equador da Copa.</h3>
+</div>
+
+<div class="noticia2">
+    <div class="card">         
+        <img src="images/messi2.webp" alt="" class="card-image">
+        <h3 class="card-title2">3 dos 5 jogos com mais ingressos vendidos são da Argentina.</h3>
+    </div>
+</div>
+
+<div class="noticia3">
+    <div class="card">         
+        <img src="images/ar.webp" alt="" class="card-image">
+        <h3 class="card-title2">Estádios da Copa terão ar-condicionados.</h3>
+    </div>
+</div>
+
+<div class="noticia4">
+    <div class="card">         
+        <img src="images/selecao3.webp" alt="" class="card-image">
+        <h3 class="card-title">Brasil pode ter caminho díficil na Copa.</h3>
+    </div>
+</div>
+
+<div class="especiais">
+    <p class="esp"><b>ESPECIAIS</b></p>
+</div>
+
+<div class="card2">         
+    <img src="images/briga.png" alt="" class="card-image2">
+    <h3 class="card-title5">BRIGAS HISTÓRICAS</h3>
+</div>
+
+<div class="card3">         
+    <img src="images/pelé.png" alt="" class="card-image3">
+    <h3 class="card-title6">LENDAS</h3>
+</div>
+
+<div class="card4">         
+    <img src="images/palmeirascampeao.jpg" alt="" class="card-image4">
+    <h3 class="card-title7">OS CAMPEÕES</h3>
+</div>  
+
+<div class="videos">
+    <p class="esp"><b>VÍDEOS</b></p>
+</div>
+
+
+
+<div class="card9">         
+    <img src="images/final2018.jpeg" alt="" class="card-image9">
+</div>
+
+    <h3 class="card-title12">FINAL 2018</h3>  
+
+<div class="card10">         
+    <img src="images/final2019.webp" alt="" class="card-image10">
+</div>
+
+    <h3 class="card-title13">FINAL 2019</h3>
+
+<div class="card11">         
+    <img src="images/final2020.jpeg" alt="" class="card-image11">
+</div>
+
+    <h3 class="card-title14">FINAL 2020</h3>
+
+<div class="card12">         
+    <img src="images/final2021.jpg" alt="" class="card-image12">
+</div>
+    
+    <h3 class="card-title15">FINAL 2021</h3>
+
+<div class="card13">         
+    <img src="images/lib2022.jpg" alt="" class="card-image13">
+</div>
+        
+    <h3 class="card-title16">LIBERTADORES 2022</h3>
+    
 
     <footer>&copy;Todos os direitos reservados.<br><br>
         
@@ -181,6 +1217,11 @@
         <a href="https://twitter.com/">
             <img class="facebook" src="images/3225183_app_logo_media_popular_social_icon.png" width="10px"></a>
         </div>
+
+        <a href="https://www.fifa.com/">
+            <img class="facebook" src="images/fifa.png" width="10px"></a>
+        </div>
  </footer>
+     
 </body>
 </html>
