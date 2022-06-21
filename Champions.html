@@ -89,7 +89,7 @@ img{
       .logo1{
           width: 120px;
           margin-top: -45px;
-          margin-left: 10px;
+          margin-left: 900px;
       }
       
      
@@ -120,137 +120,7 @@ a{
     color: #e69900;
     
 }
-.carrosel {
-    width: 60%;     
-}
 
-.carousel-item img {
-    border-radius: 25px;
-
-}
-
-.slider .frames .slide .description {
-    background: transparent;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    /*transition*/
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    transition: all 1s ease;
-}
-
-/* Slider */
-.slider {
-    height: 380px;
-    left: 50%;
-    margin: -190px -635px;
-    position: absolute;
-    top: 30%;
-    width: 1203px;
-    display: flex;
-flex-direction: column;
-    /*box-shadow*/
-    
-}
-.slider .frames {
-    height: 500px;
-    position: relative;
-}
-.slider .frames .slide {
-    height: 500px;
-    list-style: none;
-    position: absolute;
-    width: 1200px;
-}
-.slider .slide:target { z-index: 100 }
-.slider .frames .slide img {
-    height: 500px;
-    width: 1200px;
-}
-.slider .frames .slide nav a {
-    background: hsla(0,0%,0%,.75);
-    color: #fff;
-    font-size: 16px;
-    line-height: 50px;
-    margin-top: -25px;
-    opacity: 0;
-    position: absolute;
-    text-align: center;
-    text-decoration: none;
-    top: 50%;
-    width: 50px;
-    visibility: hidden;
-    z-index: 10;
-}
-.slider:hover .frames .slide nav a {
-    opacity: 1;
-    visibility: visible;
-}
-.slider .frames .slide nav .prev {
-    /*border-radius*/
-    -webkit-border-radius: 0 25px 25px 0;
-    -moz-border-radius: 0 25px 25px 0;
-    border-radius: 0 25px 25px 0;
-    left: 0;
-}
-.slider .frames .slide nav .next {
-    /*border-radius*/
-    -webkit-border-radius: 25px 0 0 25px;
-    -moz-border-radius: 25px 0 0 25px;
-    border-radius: 25px 0 0 25px;
-    right: 0;
-}
-.slider .frames .slide nav a:hover { background: #000 }
-.slider .quicknav {
-    bottom: 0;
-    font-size: 0;
-    opacity: 0;
-    position: absolute;
-    text-align: center;
-    width: 100%;
-    z-index: 100;
-}
-.slider:hover .quicknav { opacity: .9 }
-.slider .quicknav li { display: inline-block }
-.slider .quicknav a {
-    background: hsla(0,0%,100%,.9);
-    border: 1px solid hsla(0,0%,0%,.9);
-    /*border-radius*/
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    border-radius: 100%;
-    display: block;
-    height: 10px;
-    margin: 10px 5px;
-    text-decoration: none;
-    width: 10px;
-}
-.slider .quicknav a:hover { background: hsla(0,0%,50%,.9) }
-.slider #one:target ~ .quicknav a[href="#one"], .slider #two:target ~ .quicknav a[href="#two"], .slider #three:target ~ .quicknav a[href="#three"], .slider #four:target ~ .quicknav a[href="#four"], .slider #five:target ~ .quicknav a[href="#five"] {
-    background: hsla(0,0%,0%,.9);
-    border-color: hsla(0,0%,100%,.9);
-    background: rgb(244,246,245);
-    /*linear-gradient*/
-    background: -webkit-gradient(linear,left top,left bottom,color-stop(rgba(244,246,245,1),0.01),color-stop(rgba(203,219,219,1),1),color-stop(rgba(216,216,216,1),1));
-    background: -webkit-linear-gradient(top, rgba(244,246,245,1) 1%, rgba(203,219,219,1) 100%, rgba(216,216,216,1) 100%);
-    background: -moz-linear-gradient(top, rgba(244,246,245,1) 1%, rgba(203,219,219,1) 100%, rgba(216,216,216,1) 100%);
-    background: -o-linear-gradient(top, rgba(244,246,245,1) 1%, rgba(203,219,219,1) 100%, rgba(216,216,216,1) 100%);
-    background: linear-gradient(top, rgba(244,246,245,1) 1%, rgba(203,219,219,1) 100%, rgba(216,216,216,1) 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,rgba(244,246,245,1)), color-stop(100%,rgba(203,219,219,1)), color-stop(100%,rgba(216,216,216,1)));
-    background: -webkit-linear-gradient(top, rgba(244,246,245,1) 1%,rgba(203,219,219,1) 100%,rgba(216,216,216,1) 100%);
-    background: -moz-linear-gradient(top, rgba(244,246,245,1) 1%,rgba(203,219,219,1) 100%,rgba(216,216,216,1) 100%);
-    background: -o-linear-gradient(top, rgba(244,246,245,1) 1%,rgba(203,219,219,1) 100%,rgba(216,216,216,1) 100%);
-    background: linear-gradient(top, rgba(244,246,245,1) 1%,rgba(203,219,219,1) 100%,rgba(216,216,216,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f6f5', endColorstr='#d8d8d8',GradientType=0 );
-    /*box-shadow*/
-    -webkit-box-shadow: inset 0 0 3px #000,0 0 2px rgba(0,0,0,.5),0 2px 3px #666;
-    -moz-box-shadow: inset 0 0 3px #000,0 0 2px rgba(0,0,0,.5),0 2px 3px #666;
-    box-shadow: inset 0 0 3px #000,0 0 2px rgba(0,0,0,.5),0 2px 3px #666;
-}
 .description{
     text-align: center;
     font-size: 30px;
@@ -260,8 +130,8 @@ flex-direction: column;
 .not{
     font-size: 70px;
     font-family: Arial, Helvetica, sans-serif;
-    margin-top: 700px;
-    color: #e69900;
+    margin-top: 200px;
+    color: white;
     margin-left: 60px;
 }
 
@@ -328,7 +198,7 @@ margin-top: -470px;
     font-size: 70px;
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 700px;
-    color: #e69900;
+    color: white;
     margin-left: 60px;
     margin-top: 200px;
 }
@@ -621,7 +491,6 @@ padding: 30px;
 left: 20px;
 margin-left: 40px;
 margin-top: 80px;
-border-radius: 25px;
 }
 
 .card-image9{
@@ -639,19 +508,15 @@ left: 15px;
 bottom: 15px;
 font-size: 30px;
 font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-color: #e69900;
+color: white;
 text-align: center;
 margin-left: 170px;
-margin-bottom: -1980px;
+margin-bottom: -700px;
 margin-top: -10px;
 }
 
 .card9:hover .card-image9{
     transform: scale(1.15);
-}
-
-.card9:hover{
-    border-radius: 30%;
 }
 
 .card10{
@@ -665,7 +530,6 @@ padding: 30px;
 left: 20px;
 margin-left: 460px;
 margin-top: -300px;
-border-radius: 25px;
 }
 
 .card-image10{
@@ -683,19 +547,15 @@ left: 15px;
 bottom: 15px;
 font-size: 30px;
 font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-color: #e69900;
+color: white;
 text-align: center;
 margin-left: 590px;
-margin-bottom: -1980px;
+margin-bottom: -700px;
 margin-top: 100px;
 }
 
 .card10:hover .card-image10{
     transform: scale(1.15);
-}
-
-.card10:hover{
-    border-radius: 30%;
 }
 
 .card11{
@@ -709,7 +569,6 @@ padding: 30px;
 left: 20px;
 margin-left: 880px;
 margin-top: -300px;
-border-radius: 25px;
 }
 
 .card-image11{
@@ -727,19 +586,15 @@ left: 15px;
 bottom: 15px;
 font-size: 30px;
 font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-color: #e69900;
+color: white;
 text-align: center;
 margin-left: 1010px;
-margin-bottom: -1980px;
+margin-bottom: -700px;
 margin-top: 100px;
 }
 
 .card11:hover .card-image11{
     transform: scale(1.15);
-}
-
-.card11:hover{
-    border-radius: 30%;
 }
 
 .card12{
@@ -753,7 +608,6 @@ padding: 30px;
 left: 20px;
 margin-left: 1300px;
 margin-top: -300px;
-border-radius: 25px;
 }
 
 .card-image12{
@@ -771,19 +625,15 @@ left: 15px;
 bottom: 15px;
 font-size: 30px;
 font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-color: #e69900;
+color: white;
 text-align: center;
 margin-left: 1420px;
-margin-bottom: -1980px;
+margin-bottom: -700px;
 margin-top: 100px;
 }
 
 .card12:hover .card-image12{
     transform: scale(1.15);
-}
-
-.card12:hover{
-    border-radius: 30%;
 }
 
 .card13{
@@ -797,7 +647,6 @@ padding: 30px;
 left: 20px;
 margin-left: 40px;
 margin-top: 100px;
-border-radius: 25px;
 }
 
 .card-image13{
@@ -815,19 +664,15 @@ left: 15px;
 bottom: 15px;
 font-size: 30px;
 font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-color: #e69900;
+color: white;
 text-align: center;
-margin-left: 103px;
-margin-bottom: -2380px;
+margin-left: 70px;
+margin-bottom: -1100px;
 margin-top: 100px;
 }
 
 .card13:hover .card-image13{
     transform: scale(1.15);
-}
-
-.card13:hover{
-    border-radius: 30%;
 }
 
 .card14{
@@ -841,7 +686,6 @@ padding: 30px;
 left: 20px;
 margin-left: 460px;
 margin-top: -300px;
-border-radius: 25px;
 }
 
 .card-image14{
@@ -853,7 +697,7 @@ object-fit: cover;
 transition: transform .75s;
 }
 
-.card-title17{
+.card-title20{
 position: absolute;
 left: 15px;
 bottom: 15px;
@@ -861,17 +705,13 @@ font-size: 30px;
 font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 color: white;
 text-align: center;
-margin-left: 540px;
-margin-bottom: -3060px;
-margin-top: 100px;
+margin-left: 510px;
+margin-bottom: -1100px;
+margin-top: 10px;
 }
 
 .card14:hover .card-image14{
     transform: scale(1.15);
-}
-
-.card14:hover{
-    border-radius: 30%;
 }
 
 .card15{
@@ -885,7 +725,6 @@ padding: 30px;
 left: 20px;
 margin-left: 880px;
 margin-top: -300px;
-border-radius: 25px;
 }
 
 .card-image15{
@@ -897,7 +736,7 @@ object-fit: cover;
 transition: transform .75s;
 }
 
-.card-title18{
+.card-title21{
 position: absolute;
 left: 15px;
 bottom: 15px;
@@ -905,17 +744,13 @@ font-size: 30px;
 font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 color: white;
 text-align: center;
-margin-left: 930px;
-margin-bottom: -3060px;
+margin-left: 910px;
+margin-bottom: -1100px;
 margin-top: 100px;
 }
 
 .card15:hover .card-image15{
     transform: scale(1.15);
-}
-
-.card15:hover{
-    border-radius: 30%;
 }
 
 .card16{
@@ -929,7 +764,6 @@ padding: 30px;
 left: 20px;
 margin-left: 1300px;
 margin-top: -300px;
-border-radius: 25px;
 }
 
 .card-image16{
@@ -941,7 +775,7 @@ object-fit: cover;
 transition: transform .75s;
 }
 
-.card-title19{
+.card-title22{
 position: absolute;
 left: 15px;
 bottom: 15px;
@@ -949,8 +783,8 @@ font-size: 30px;
 font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 color: white;
 text-align: center;
-margin-left: 1350px;
-margin-bottom: -3060px;
+margin-left: 1335px;
+margin-bottom: -1100px;
 margin-top: 100px;
 }
 
@@ -958,9 +792,163 @@ margin-top: 100px;
     transform: scale(1.15);
 }
 
-.card16:hover{
-    border-radius: 30%;
+.card17{
+width: 400px;
+height: 300px;
+position: relative;
+overflow: hidden;
+background-size: cover;
+margin-top: 70px;
+padding: 30px;
+left: 20px;
+margin-left: 40px;
+margin-top: 110px;
 }
+
+.card-image17{
+position: absolute;
+inset: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: transform .75s;
+}
+
+.card-title23{
+position: absolute;
+left: 15px;
+bottom: 15px;
+font-size: 30px;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color: white;
+text-align: center;
+margin-left: 100px;
+margin-bottom: -1510px;
+margin-top: 100px;
+}
+
+.card17:hover .card-image17{
+    transform: scale(1.15);
+}
+
+.card18{
+width: 400px;
+height: 300px;
+position: relative;
+overflow: hidden;
+background-size: cover;
+margin-top: 70px;
+padding: 30px;
+left: 20px;
+margin-left: 460px;
+margin-top: -300px;
+}
+
+.card-image18{
+position: absolute;
+inset: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: transform .75s;
+}
+
+.card-title24{
+position: absolute;
+left: 15px;
+bottom: 15px;
+font-size: 30px;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color: white;
+text-align: center;
+margin-left: 527px;
+margin-bottom: -1510px;
+margin-top: 100px;
+}
+
+.card18:hover .card-image18{
+    transform: scale(1.15);
+}
+
+.card19{
+width: 400px;
+height: 300px;
+position: relative;
+overflow: hidden;
+background-size: cover;
+margin-top: 70px;
+padding: 30px;
+left: 20px;
+margin-left: 880px;
+margin-top: -300px;
+}
+
+.card-image19{
+position: absolute;
+inset: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: transform .75s;
+}
+
+.card-title25{
+position: absolute;
+left: 15px;
+bottom: 15px;
+font-size: 30px;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color: white;
+text-align: center;
+margin-left: 940px;
+margin-bottom: -1510px;
+margin-top: 100px;
+}
+
+.card19:hover .card-image19{
+    transform: scale(1.15);
+}
+
+.card20{
+width: 400px;
+height: 300px;
+position: relative;
+overflow: hidden;
+background-size: cover;
+margin-top: 70px;
+padding: 30px;
+left: 20px;
+margin-left: 1300px;
+margin-top: -300px;
+}
+
+.card-image20{
+position: absolute;
+inset: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: transform .75s;
+}
+
+.card-title26{
+position: absolute;
+left: 15px;
+bottom: 15px;
+font-size: 30px;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color: white;
+text-align: center;
+margin-left: 1360px;
+margin-bottom: -1510px;
+margin-top: 100px;
+}
+
+.card20:hover .card-image20{
+    transform: scale(1.15);
+}
+
+
     </style>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
@@ -981,142 +969,7 @@ margin-top: 100px;
     </div>
 
     
-    <div class="slider">
-        <ul class="frames">
-            <li id="one" class="slide">
-                <img src="images/jogo1.png" alt="Slide 1">
-                <nav>
-                    <a class="prev" href="#sixteen">&larr;</a>
-                    <a class="next" href="#two">&rarr;</a>
-                </nav>                
-            </li>
-            <li id="two" class="slide">
-                <img src="images/jogo2.png" alt="Slide 2">
-                <nav>
-                    <a class="prev" href="#one">&larr;</a>
-                    <a class="next" href="#three">&rarr;</a>
-                </nav>                
-            </li>
-            <li id="three" class="slide">
-                <img src="images/jogo3.png" alt="Slide 3">
-                <nav>
-                    <a class="prev" href="#two">&larr;</a>
-                    <a class="next" href="#four">&rarr;</a>
-                </nav>                
-            </li>           
-            <li id="four" class="slide">
-                <img src="images/jogo4.png" alt="Slide 4">
-                <nav>
-                    <a class="prev" href="#three">&larr;</a>
-                    <a class="next" href="#five">&rarr;</a>
-                </nav>
-            </li> 
-            <li id="five" class="slide">
-                <img src="images/jogo5.png" alt="Slide 5">
-                <nav>
-                    <a class="prev" href="#four">&larr;</a>
-                    <a class="next" href="#six">&rarr;</a>
-                </nav>
-            </li>     
-            <li id="six" class="slide">
-                <img src="images/jogo6.png" alt="Slide 6">
-                <nav>
-                    <a class="prev" href="#five">&larr;</a>
-                    <a class="next" href="#seven">&rarr;</a>
-                </nav>
-            </li>     
-            <li id="seven" class="slide">
-                <img src="images/jogo7.png" alt="Slide 7">
-                <nav>
-                    <a class="prev" href="#six">&larr;</a>
-                    <a class="next" href="#eigth">&rarr;</a>
-                </nav>
-            </li>     
-            <li id="eigth" class="slide">
-                <img src="images/jogo8.png" alt="Slide 8">
-                <nav>
-                    <a class="prev" href="#seven">&larr;</a>
-                    <a class="next" href="#nine">&rarr;</a>
-                </nav>
-            </li>     
-            <li id="nine" class="slide">
-                <img src="images/jogo9.png" alt="Slide 9">
-                <nav>
-                    <a class="prev" href="#eigth">&larr;</a>
-                    <a class="next" href="#ten">&rarr;</a>
-                </nav>
-            </li>     
-            <li id="ten" class="slide">
-                <img src="images/jogo10.png" alt="Slide 10">
-                <nav>
-                    <a class="prev" href="#nine">&larr;</a>
-                    <a class="next" href="#eleven">&rarr;</a>
-                </nav>
-            </li>     
-            <li id="eleven" class="slide">
-                <img src="images/jogo11.png" alt="Slide 11">
-                <nav>
-                    <a class="prev" href="#ten">&larr;</a>
-                    <a class="next" href="#twelve">&rarr;</a>
-                </nav>
-            </li>     
-            <li id="twelve" class="slide">
-                <img src="images/jogo12.png" alt="Slide 12">
-                <nav>
-                    <a class="prev" href="#eleven">&larr;</a>
-                    <a class="next" href="#thirteen">&rarr;</a>
-                </nav>
-            </li>     
-            <li id="thirteen" class="slide">
-                <img src="images/jogo13.png" alt="Slide 13">
-                <nav>
-                    <a class="prev" href="#twelve">&larr;</a>
-                    <a class="next" href="#fourteen">&rarr;</a>
-                </nav>
-            </li>     
-            <li id="fourteen" class="slide">
-                <img src="images/jogo14.png" alt="Slide 14">
-                <nav>
-                    <a class="prev" href="#thirteen">&larr;</a>
-                    <a class="next" href="#fifteen">&rarr;</a>
-                </nav>
-            </li>     
-            <li id="fifteen" class="slide">
-                <img src="images/jogo15.png" alt="Slide 15">
-                <nav>
-                    <a class="prev" href="#fourteen">&larr;</a>
-                    <a class="next" href="#sixteen">&rarr;</a>
-                </nav>
-            </li>     
-            <li id="sixteen" class="slide">
-                <img src="images/jogo16.png" alt="Slide 16">
-                <nav>
-                    <a class="prev" href="#fifteen">&larr;</a>
-                    <a class="next" href="#one">&rarr;</a>
-                </nav>
-            </li>                         
-            <li class="quicknav">
-                <ul>
-                    <li><a href="#one"></a></li>
-                    <li><a href="#two"></a></li> 
-                    <li><a href="#three"></a></li>    
-                    <li><a href="#four"></a></li>
-                    <li><a href="#five"></a></li>
-                    <li><a href="#six"></a></li>
-                    <li><a href="#seven"></a></li>
-                    <li><a href="#eigth"></a></li>
-                    <li><a href="#nine"></a></li>
-                    <li><a href="#ten"></a></li>
-                    <li><a href="#eleven"></a></li>
-                    <li><a href="#twelve"></a></li>
-                    <li><a href="#thirteen"></a></li>
-                    <li><a href="#fourteen"></a></li>
-                    <li><a href="#fifteen"></a></li>
-                    <li><a href="#sixteen"></a></li>                       
-                </ul>
-            </li>
-        </ul>
-    </div>
+    
     
 <div class="noticias">
     <p class="not"><b>NOTÍCIAS</b></p>
@@ -1148,61 +1001,81 @@ margin-top: 100px;
     </div>
 </div>
 
-<div class="especiais">
-    <p class="esp"><b>ESPECIAIS</b></p>
-</div>
-
-<div class="card2">         
-    <img src="images/briga.png" alt="" class="card-image2">
-    <h3 class="card-title5">BRIGAS HISTÓRICAS</h3>
-</div>
-
-<div class="card3">         
-    <img src="images/pelé.png" alt="" class="card-image3">
-    <h3 class="card-title6">LENDAS</h3>
-</div>
-
-<div class="card4">         
-    <img src="images/palmeirascampeao.jpg" alt="" class="card-image4">
-    <h3 class="card-title7">OS CAMPEÕES</h3>
-</div>  
-
 <div class="videos">
-    <p class="esp"><b>VÍDEOS</b></p>
+    <p class="esp"><b>TEMPORADA 21/22</b></p>
 </div>
-
-
 
 <div class="card9">         
-    <img src="images/final2018.jpeg" alt="" class="card-image9">
+    <img src="images/Robert-Lewandowski-1.jpg" alt="" class="card-image9">
 </div>
 
-    <h3 class="card-title12">FINAL 2018</h3>  
+    <h3 class="card-title12">GOLAÇOS</h3>  
 
 <div class="card10">         
-    <img src="images/final2019.webp" alt="" class="card-image10">
+    <img src="images/courtois2.webp" alt="" class="card-image10">
 </div>
 
-    <h3 class="card-title13">FINAL 2019</h3>
+    <h3 class="card-title13">GRANDES DEFESAS</h3>
 
 <div class="card11">         
-    <img src="images/final2020.jpeg" alt="" class="card-image11">
+    <img src="images/6912.webp" alt="" class="card-image11">
 </div>
 
-    <h3 class="card-title14">FINAL 2020</h3>
+    <h3 class="card-title14">GOLS: REAL MADRID</h3>
 
 <div class="card12">         
-    <img src="images/final2021.jpg" alt="" class="card-image12">
+    <img src="images/vini.jfif" alt="" class="card-image12">
 </div>
     
-    <h3 class="card-title15">FINAL 2021</h3>
+    <h3 class="card-title15">FINAL</h3>
 
 <div class="card13">         
-    <img src="images/lib2022.jpg" alt="" class="card-image13">
+    <img src="images/rodrygo.webp" alt="" class="card-image13">
 </div>
         
-    <h3 class="card-title16">LIBERTADORES 2022</h3>
-    
+    <h3 class="card-title16">Real Madrid 3 x 1 Man. City</h3>
+ 
+<div class="card14">         
+    <img src="images/fabinho.jpg" alt="" class="card-image14">
+</div>
+            
+    <h3 class="card-title20">Villarreal 2 x 3 Liverpool</h3>    
+
+<div class="card15">         
+    <img src="images/debruyne.webp" alt="" class="card-image15">
+</div>
+            
+    <h3 class="card-title21">Man. City 4 x 3 Real Madrid</h3>
+        
+<div class="card16">         
+    <img src="images/benzema.webp" alt="" class="card-image16">
+</div>
+                
+    <h3 class="card-title22">Real Madrid 2 x 3 Chelsea</h3>
+
+<div class="card17">         
+    <img src="images/firmino.webp" alt="" class="card-image17">
+</div>
+                    
+    <h3 class="card-title23">Liverpool 3 x 3 Benfica</h3>
+
+<div class="card18">         
+    <img src="images/villarreal.webp" alt="" class="card-image18">
+</div>
+                        
+    <h3 class="card-title24">Bayern 1 x 1 Villarreal</h3>
+
+<div class="card19">         
+    <img src="images/benzema3.webp" alt="" class="card-image19">
+</div>
+                            
+    <h3 class="card-title25">Real Madrid 3 x 1 PSG</h3>
+
+<div class="card20">         
+     <img src="images/mbappe.webp" alt="" class="card-image20">
+</div>
+                                
+    <h3 class="card-title26">PSG 1 x 0 Real Madrid</h3>
 
     <footer>&copy;Todos os direitos reservados.<br><br>
         
