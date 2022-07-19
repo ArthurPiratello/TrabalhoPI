@@ -74,7 +74,7 @@ body{
     background-color:blueviolet;
     border: none;
     text-align: center;
-
+    margin-left: 70px;
 }
 
 .button1 span {
@@ -101,6 +101,44 @@ body{
       }
 
       .button1:hover {
+            background-color:black;
+            color:white;
+      }
+
+      .button2{
+    color:white;
+    font-size: 20px;
+    font-family:"Verdana";
+    background-color:blueviolet;
+    border: none;
+    text-align: center;
+    margin-left: 20px;
+}
+
+.button2 span {
+    position: relative;
+    transition: 0.5s;
+}
+
+.button2 span:after {
+        content: "\00bb";
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+      }
+ 
+      .button2:hover span {
+        padding-right: 25px;
+      }
+ 
+      .button2:hover span:after {
+        opacity: 1;
+        right: 0;
+      }
+
+      .button2:hover {
             background-color:black;
             color:white;
       }
@@ -400,9 +438,8 @@ img{
      </header>
 
      <p class="p2">
-        <button class="button"><a href="Outros.html"><span><b>Home</b></span></a></button>
         <button class="button"><a href="Sobre.html"><span><b>Sobre</b></span></a></button>
-        <button class="button"><a href="Contatos.html"><span><b>Contatos</b></a></span></button>
+        <button class="button2"><a href="Contatos.html"><span><b>Contatos</b></a></span></button>
    </p>
 
    <div class="slider">
