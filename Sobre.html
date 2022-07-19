@@ -5,8 +5,163 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="form.js"></script>
+<style>
+
+header{
+    background-color:#0033cc;
+    padding: 30px;
+   
+}
+
+.p1{
+    color:chartreuse;
+    font-size:50px;
+    font-family:Verdana;
+    
+}
+
+img{
+        width: 70px;
+        margin-left: 10px;
+    }
+
+footer{
+    padding: 40px;
+    clear: both;
+    background-color:#0033cc;
+    position: fixed;
+    bottom: 0;
+    width: 2000px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+*{
+    margin: 0;
+}
+
+.sobre{
+    padding: 100px;
+    height:460px;
+    width: 1700px;
+    background-color: #4E75EB;
+    text-align: left;
+    margin-top: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: white; 
+    margin: 18px 10px;
+  
+}
+
+
+
+.button1{
+    color:#e69900;
+    font-size: 20px;
+    font-family:"Verdana";
+    background-color:transparent;
+    border: none;
+    text-align: center;
+    margin-top: 5px;
+    margin-left: 1px;
+
+}
+
+.button1 span {
+    position: relative;
+    transition: 0.5s;
+}
+
+.button1 span:after {
+        content: "<";
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        left: -20px;
+        transition: 0.5s;
+      }
+ 
+      .button1:hover span {
+        padding-left: 25px;
+      }
+ 
+      .button1:hover span:after {
+        opacity: 1;
+        left: 0;
+      }
+
+      .button1:hover {
+            background-color:black;
+            color:#e69900;
+      }
+
+      .btn{
+          background-color:white;
+          padding: 10px;
+          width: 100px;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 20px;
+          border-radius: 5px;
+          -webkit-transition-duration: 0.4s; /* Safari */
+          transition-duration: 0.4s;
+          color: darkblue;
+          border: solid 2px;
+          border-color: darkblue;
+      }
+
+      .p3{
+        color:chartreuse;
+        font-size:70px;
+        font-family:Verdana;
+      }
+
+      
+     
+.btn:hover {
+    background-color: darkblue; /* Green */
+    color: white;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.p3{
+        color:chartreuse;
+        font-size:70px;
+        font-family:Verdana;
+        text-align: center;
+      }
+
+
+</style>
 </head>
 <body>
-    <h1><b>Sobre</b></h1>
+
+    <header class="cabeçalho">
+        <p class="p1"><b>DriblaÊ</b><img src="images/ball3.png" alt=""></p>
+        <button class="button1"><a href="index.html"><span><b>Voltar</b></span></a></button>
+    </header>
+
+    <div class="sobre">
+        <h3>Site desenvolvido em HTML, CSS e JavaScript por Arthur Augusto Rodrigues Piratello de Castro.</h3>
+        <br>
+        <br>
+        <h1>O QUE É O SITE ?</h1>
+        <br>
+        <h3>O site é composto por 7 telas. A tela inicial é composta pelos botões Sobre e Contatos, um carrossel e algumas notícias. Ao clicar no botão Sobre o usuário é direcionado para uma página com algumas informações sobre o site, como ele foi feito e por quem. Já no botão Contatos, o usuário é direcionado para uma página com um formulário para preencher caso queira enviar alguma mensagem.
+            No carrossel o usuário poderá escolher qual dos campeonatos ele mais se interessa (Brasileirão, Copa do Mundo, Libertadores e Champions League), cada um dos campeonatos tem sua própria tela.
+       </h3>
+       <br>
+       <br>
+       <p class="p3"><b>DriblaÊ</b><img src="images/ball4.png" alt=""></p>
+    </div>
+
+    <footer>&copy;Todos os direitos reservados</footer>
 </body>
 </html>
